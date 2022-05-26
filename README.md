@@ -1,2 +1,1 @@
 # hotelpuntomx.io
-# hotelpuntomx.io
