@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Lato:wght@100;300&display=swap');
 @font-face {
   font-family: 'icomoon';
   src: url("../fonts/icomoon/icomoon.eot?srf3rx");
@@ -13,6 +14,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 :root{
   /*Colores*/
   --color-primario:#00a8ab;
@@ -28,6 +30,7 @@ html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  font-size: 62.5%;
 }
 
 body {
@@ -7972,6 +7975,7 @@ figure {
   position: relative;
 }
 .slider-text > .slider-text-inner h2 {
+  font-family: 'Courgette', cursive;
   font-size: 50px;
   font-weight: 400;
   color: #fff;
@@ -7985,17 +7989,18 @@ figure {
 .slider-text > .slider-text-inner p {
   margin-bottom: 30px;
   font-size: 20px;
+  font-family: 'Lato', sans-serif;
   color: rgba(255, 255, 255, 0.8);
-  padding: 7px 0;
+  padding: 10px 20px;
 }
 .slider-text > .slider-text-inner p > span {
-  text-transform: uppercase;
-  letter-spacing: 5px;
+  text-transform: none;
+  /*letter-spacing: 2px;*/
   border-top: 2px solid rgba(255, 255, 255, 0.3);
   border-bottom: 2px solid rgba(255, 255, 255, 0.3);
 }
 .slider-text > .slider-text-inner p .btn {
-  font-size: 22px !important;
+  font-size: 1.7rem !important;
   bordeR: 1px solid transparent;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
@@ -8011,7 +8016,7 @@ div.cs-select span {
 }
 
 .cs-skin-border {
-  font-size: 16px;
+  font-size: 1.6rem;
   color: #fff;
 }
 @media screen and (max-width: 829px) {
