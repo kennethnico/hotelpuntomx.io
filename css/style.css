@@ -8923,7 +8923,7 @@ input[type="text"] {
   background-color: #555;
   background-attachment: fixed;
   background-size: cover;
-  position: relative;
+  /*position: relative;*/
 }
 .fh5co-parallax .overlay {
   position: absolute;
@@ -8938,6 +8938,8 @@ input[type="text"] {
   .fh5co-parallax {
     height: inherit;
     padding: 4em 0;
+    background-repeat: no-repeat!important;
+    background-position: top center!important;
   }
 }
 .fh5co-parallax .fh5co-intro h1 {
@@ -8945,6 +8947,7 @@ input[type="text"] {
   font-size: 50px;
   font-weight: 400;
   margin-bottom: 10px;
+  font-family: 'Courgette', cursive, sans-serif;
 }
 @media screen and (max-width: 768px) {
   .fh5co-parallax .fh5co-intro h1 {
