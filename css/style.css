@@ -8956,6 +8956,8 @@ input[type="text"] {
 }
 .fh5co-parallax .fh5co-intro p {
   color: #fff;
+  font-size: 1.3rem;
+  text-transform: uppercase;
 }
 .fh5co-parallax .fh5co-intro p a {
   color: var(--color-primario);
