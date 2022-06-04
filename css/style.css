@@ -8054,7 +8054,7 @@ div.cs-select span {
   border-radius: 10px;
   position: absolute;
   left: calc(50% - 200px);
-  top: calc(100% - 310px);
+  top: calc(100% - 410px);
   display: block;
   margin-top: 0;
   margin-bottom: 0;
@@ -8073,7 +8073,7 @@ div.cs-select span {
   #availability {
     max-width: 450px;
     left: calc(50% - 225px);
-    top: calc(100% - 460px);
+    top: calc(100% - 550px);
   }
 }
 @media screen and (max-width: 915px) {
@@ -8090,6 +8090,7 @@ div.cs-select span {
 @media screen and (max-width: 769px) {
   #availability {
     width: 100%;
+    top: calc(100% - 550px);
   }
 }
 #availability > form {
@@ -8253,7 +8254,7 @@ div.cs-select span {
   display: block;
 }
 .myc{
-  margin-top: 50px;
+  margin-top: 70px;
 }
 #featured-hotel {
   float: left;
