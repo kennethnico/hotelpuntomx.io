@@ -8936,7 +8936,7 @@ input[type="text"] {
   background-color: #555;
   background-attachment: fixed;
   background-size: cover;
-  /*position: relative;*/
+  position: relative;
 }
 .fh5co-parallax .overlay {
   position: absolute;
@@ -8944,7 +8944,7 @@ input[type="text"] {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.4);
+  /*background: rgba(0, 0, 0, 0.4);*/
 }
 
 @media screen and (max-width: 768px) {
