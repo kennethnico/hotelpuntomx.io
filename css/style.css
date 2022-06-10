@@ -7449,6 +7449,24 @@ figure {
   background: var(--color-primario);
   color: #fff !important;
 }
+.btn-second {
+  background: var(--color-secundario);
+  color: #fff;
+  border: 2px solid var(--color-secundario);
+}
+.btn-second:hover, .btn-primary:focus, .btn-primary:active {
+  background: var(--bg-hover) !important;
+  border-color: #3c4146 !important;
+}
+.btn-second.btn-outline {
+  background: transparent;
+  color: var(--color-secundario);
+  border: 2px solid var(--color-secundario);
+}
+.btn-second.btn-outline:hover, .btn-second.btn-outline:focus, .btn-second.btn-outline:active {
+  background: var(--color-secundario);
+  color: #fff !important;
+}
 
 .btn-success {
   background: #5cb85c;
@@ -7596,6 +7614,39 @@ figure {
   right: 10px;
 }
 .btn-luxe-primary:focus, .btn-luxe-primary:active {
+  background: #1e2123 !important;
+}
+.btn-luxe-second {
+  background: var(--color-primario);
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: transparent;
+  overflow: hidden;
+  padding: 10px 20px;
+  position: relative;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.btn-luxe-second i {
+  position: absolute;
+  top: 50%;
+  font-size: 16px;
+  right: -20px;
+  margin-top: -8px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.btn-luxe-second:hover {
+  background: #191b1d;
+  padding-right: 40px;
+}
+.btn-luxe-second:hover i {
+  right: 10px;
+}
+.btn-luxe-second:focus, .btn-luxe-second:active {
   background: #1e2123 !important;
 }
 
