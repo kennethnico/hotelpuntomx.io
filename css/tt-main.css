@@ -196,6 +196,7 @@ h4, .h4 {
 .service-content .service-item p{
   color: var(--white);
   font-size: 1.5rem;
+  text-align: justify;
 }
 .service-content .service-item .line-dec {
   width: 45px;
