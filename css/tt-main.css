@@ -2,7 +2,40 @@
 /*----------
   NAV
 ----------*/
-
+.btn-waze{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border-color: rgba(0,0,0,0);
+  background-color: var(--color-primario);
+  color: #FFF;
+  font-size: 3rem;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-waze a{
+  font-size: 4rem;
+}
+.btn-waze a:hover{
+  background-color: var(--white);
+}
+.mmOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  min-height: 100vh;
+  height: 100%;
+  /*background: rgb(4,122,122,0.6);*/
+  background: linear-gradient( rgb(4,122,122,0.6) 100%, rgba(0, 0, 0, 0.5)100%);
+  background-size: contain;
+}
+.titlePlace{
+  text-transform: none!important;
+  font-size: 8rem;
+}
 .fixed-side-navbar {
   position: fixed;
   top: 50%;
@@ -110,6 +143,30 @@
   min-height: 100vh;
   background-size: cover;
 }
+.element-content__bellasartes{
+  position: relative;
+  padding-top: 30vh;
+  text-align: center;
+  background-image: url(../assets/pexels/bellas_artes.jpeg);
+  background-attachment: fixed;
+  min-height: 100vh;
+  background-size: contain;
+  background-position: top center;
+}
+.element-content__bellasartes h1 {
+  margin-top: 0;
+  font-size: 5.8rem;
+  color: #fff;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+.element-content__bellasartes h1 span{
+  vertical-align: super;
+}
+.element-content__bellasartes ul li{
+  list-style: none;
+}
 .baner-content {
   position: relative;
   padding-top: 30vh;
@@ -139,12 +196,11 @@
   text-transform: uppercase;
   margin-bottom: 0;
 }
-.baner-content .titlePlace{
-  text-transform: none;
-  font-size: 8rem;
-}
 .baner-content h1 span{
   vertical-align: super;
+}
+.baner-content ul{
+  padding: 0;
 }
 .baner-content ul li{
   list-style: none;
@@ -244,7 +300,13 @@ h4, .h4 {
 }
 .projects-content {
   padding-top: 20vh;
-  background-image: url(../images/image-3.jpg);
+  background-image: url(../assets/pexels/bellas_artes.jpeg);
+  position: relative;
+  background-attachment: fixed;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: top center;
+  text-align: center;
 }
 .projects-content .item img {
   width: 100%;
