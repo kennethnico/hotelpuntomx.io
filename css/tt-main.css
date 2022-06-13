@@ -111,17 +111,43 @@
   background-size: cover;
 }
 .baner-content {
+  position: relative;
   padding-top: 30vh;
   text-align: center;
-  background-image: url(../images/image-1.jpg);
+  background-image: url(../assets/pexels/torre_latino.jpeg);
+  background-attachment: fixed;
+  min-height: 100vh;
+  background-size: contain;
+  background-position: top center;
+}
+.baner-content .overlayTorre {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  min-height: 100vh;
+  height: 100%;
+  /*background: rgb(128,1,1,0.6);*/
+  background: rgba(0, 0, 0, 0.3);
+  background-size: contain;
 }
 .baner-content h1 {
-  margin-top: 0px;
-  font-size: 128px;
+  margin-top: 0;
+  font-size: 5.8rem;
   color: #fff;
   font-weight: 900;
   text-transform: uppercase;
-  margin-bottom: 0px;
+  margin-bottom: 0;
+}
+.baner-content .titlePlace{
+  text-transform: none;
+  font-size: 8rem;
+}
+.baner-content h1 span{
+  vertical-align: super;
+}
+.baner-content ul li{
+  list-style: none;
 }
 .baner-content em {
   color: var(--color-primario);
@@ -139,14 +165,26 @@
   margin-top: 15px;
 }
 .service-content {
+  position: relative;
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 15vh;
-  background-image: url(../assets/pexels/angel_i.jpg);
+  background-image: url(../assets/pexels/angel_i.jpeg);
   background-attachment: fixed;
   min-height: 100vh;
   background-size: cover;
   background-position: center center;
+}
+.service-content .myselfoverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  min-height: 100vh;
+  height: 100%;
+  /*background: rgb(4,122,122,0.6);*/
+  background: linear-gradient( rgb(4,122,122,0.6) 100%, rgba(0, 0, 0, 0.5)100%);
+  background-size: contain;
 }
 .service-content .left-text h4 {
   font-size: 24px;

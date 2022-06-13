@@ -245,6 +245,12 @@ th {
   padding: 0;
 }
 
+.cursiveFont{
+  font-family: 'Courgette', cursive, sans-serif;
+}
+.fontWhite{
+  color: #FFF;
+}
 /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
 @media print {
   *,
