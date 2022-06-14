@@ -10,5 +10,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="f40904d23d" level="application" />
     <orderEntry type="library" name="jquery" level="application" />
+    <orderEntry type="library" name="@emailjs/browser" level="application" />
   </component>
 </module>
