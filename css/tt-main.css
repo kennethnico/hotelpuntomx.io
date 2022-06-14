@@ -163,7 +163,8 @@
   background-image: url(../assets/pexels/bellas_artes.jpeg);
   background-attachment: fixed;
   min-height: 100vh;
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-position: top center;
 }
 .element-content__bellasartes h1 {
@@ -188,7 +189,7 @@
   background-image: url(../assets/pexels/postal.jpeg);
   background-attachment: fixed;
   min-height: 100vh;
-  background-size: contain;
+  background-size: cover;
   background-position: top center;
 }
 .element-content__palaciopostal h1 {
@@ -213,7 +214,7 @@
   background-image: url(../assets/pexels/templo_mayor.webp);
   background-attachment: fixed;
   min-height: 100vh;
-  background-size: contain;
+  background-size: cover;
   background-position: top center;
 }
 .element-content__templomayor h1 {
@@ -230,15 +231,67 @@
 .element-content__templomayor ul li{
   list-style: none;
 }
+/**Calle Madero Styles**/
+.element-content__callemadero{
+  position: relative;
+  padding-top: 30vh;
+  text-align: center;
+  background-image: url(../assets/pexels/calle_madero.jpeg);
+  background-attachment: fixed;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: top center;
+}
+.element-content__callemadero h1 {
+  margin-top: 0;
+  font-size: 5.8rem;
+  color: #fff;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+.element-content__callemadero h1 span{
+  vertical-align: super;
+}
+.element-content__callemadero ul li{
+  list-style: none;
+}
+/**Castillo de Chapultepec Styles**/
+.element-content__chapultepec{
+  position: relative;
+  padding-top: 30vh;
+  text-align: center;
+  background-image: url(../assets/pexels/chapultepec.jpeg);
+  background-attachment: fixed;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: top center;
+}
+.element-content__chapultepec h1 {
+  margin-top: 0;
+  font-size: 5.8rem;
+  color: #fff;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+.element-content__chapultepec h1 span{
+  vertical-align: super;
+}
+.element-content__chapultepec ul li{
+  list-style: none;
+}
+/**Torre Latino Styles**/
 .baner-content {
   position: relative;
   padding-top: 30vh;
   text-align: center;
-  background-image: url(../assets/pexels/torre_latino.jpeg);
+  background-image: url(../assets/pexels/torre_latino2.jpeg);
   background-attachment: fixed;
   min-height: 100vh;
-  background-size: contain;
+  background-size: cover;
   background-position: top center;
+  background-repeat: no-repeat;
 }
 .baner-content .overlayTorre {
   position: absolute;
@@ -283,6 +336,8 @@
 .baner-content .primary-button {
   margin-top: 15px;
 }
+
+/**¿Qué empacar? Styles**/
 .service-content {
   position: relative;
   padding-left: 15px;
@@ -362,7 +417,8 @@ h4, .h4 {
   margin: 20px auto 15px auto;
 }
 
-
+/**Bellas Artes Styles**/
+/*
 .projects-content {
   padding-top: 20vh;
   background-image: url(../assets/pexels/bellas_artes.jpeg);
@@ -372,6 +428,7 @@ h4, .h4 {
   background-size: cover;
   background-position: top center;
   text-align: center;
+  background-repeat: no-repeat;
 }
 .projects-content .item img {
   width: 100%;
@@ -395,7 +452,7 @@ h4, .h4 {
   font-weight: 700;
   color: var(--color-primario);
 }
-
+*/
 
 .owl-pagination {
   margin-top: 40px;
