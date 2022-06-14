@@ -315,6 +315,9 @@ th {
   .navbar {
     display: none;
   }
+  .navbarciny {
+    display: none;
+  }
 
   .btn > .caret,
   .dropup > .btn > .caret {
@@ -4175,8 +4178,21 @@ tbody.collapse.in {
   border-bottom: 4px solid \9;
   content: "";
 }
+.dropup .caret,
+.navbarciny-fixed-bottom .dropdown .caret {
+  border-top: 0;
+  border-bottom: 4px dashed;
+  border-bottom: 4px solid \9;
+  content: "";
+}
 .dropup .dropdown-menu,
 .navbar-fixed-bottom .dropdown .dropdown-menu {
+  top: auto;
+  bottom: 100%;
+  margin-bottom: 2px;
+}
+.dropup .dropdown-menu,
+.navbarciny-fixed-bottom .dropdown .dropdown-menu {
   top: auto;
   bottom: 100%;
   margin-bottom: 2px;
