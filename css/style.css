@@ -8761,6 +8761,7 @@ div.cs-select span {
 }
 
 #hotel-facilities {
+  padding: 1em;
   float: left;
   width: 100%;
   position: relative;
@@ -9044,6 +9045,14 @@ div.cs-select span {
 @media screen and (max-width: 992px) {
   #fh5co-blog-section .desc {
     margin-bottom: 40px;
+  }
+  #hotel-facilities{
+    height: 750px!important;
+  }
+}
+@media screen and (max-width: 768px) {
+  #hotel-facilities{
+    height: 1000px!important;
   }
 }
 #fh5co-blog-section .desc h3 {

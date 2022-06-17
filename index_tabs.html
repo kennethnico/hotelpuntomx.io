@@ -455,7 +455,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <div class="section-title text-center">
+            <div class="section-title text-center" style="margin-bottom: 0;">
               <h2>Comodidades del Hotel</h2>
             </div>
           </div>
@@ -464,26 +464,47 @@
           <!---------Tabs-------->
           <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
             <li class="nav-item" role="presentation">
-              <a class="nav-link" id="pills-home-tab" data-toggle="pill" href="#restaurantemx" role="tab" aria-controls="pills-home" aria-selected="true"><i class="fa-solid fa-utensils icon" style="line-height: unset;"></i></a>
+              <a class="nav-link" id="restaurante-tab" data-toggle="pill" href="#restaurantemx" role="tab" aria-controls="pills-home" aria-selected="true"><i class="fa-solid fa-utensils icon" style="line-height: unset;"></i></a>
             </li>
             <li class="nav-item" role="presentation">
-              <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</a>
+              <a class="nav-link" id="cafemx-tab" data-toggle="pill" href="#cafemx" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="fa-solid fa-mug-hot icon" style="line-height: unset;"></i></a>
             </li>
             <li class="nav-item" role="presentation">
-              <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</a>
+              <a class="nav-link" id="parking-tab" data-toggle="pill" href="#parking" role="tab" aria-controls="pills-contact" aria-selected="false"><i class="fa-solid fa-car-side icon" style="line-height: unset"></i></a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="pet-tab" data-toggle="pill" href="#pet" role="tab" aria-controls="pills-contact" aria-selected="false"><i class="fa-solid fa-paw icon" style="line-height: unset;"></i></a>
             </li>
           </ul>
           <!----Contenido---->
           <div class="tab-content" id="pills-tabContent">
             <div class="tab-pane fade show active" id="restaurantemx" role="tabpanel" aria-labelledby="pills-home-tab">
-              <p>Tab 1</p>
-              <a href="restaurant.html">Enlace 1</a>
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="./assets/webp/ALITAS.jpeg" class="img-responsive" alt="Image">
+                  </div>
+                  <div class="col-md-6" style="height: auto;">
+                    <span class="super-heading-sm">Conoce nuestro</span>
+                    <h3 class="heading">Restaurante MX</h3>
+                    <p>México es un país que ofrece una gran variedad de platillos y bebidas hechos con un sin fin de ingredientes que, por su sabor, olor, textura y presentación, pueden enamorar a cualquiera. En Punto MX somos sin duda el lugar ideal para visitar, usamos ingredientes frescos en formas imaginativas y creativas para servirte los mejores platillos de la zona, bajo un acogedor ambiente familiar.</p>
+                    <p class="service-hour">
+                      <span>Horario de Servicio</span>
+                      <strong>7:30 AM - 8:00 PM</strong>
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <div class="tab-pane fade" id="cafemx" role="tabpanel" aria-labelledby="pills-profile-tab">
               <p>Tab 2</p>
               <a href="cafe.html">Enlace 2</a>
             </div>
-            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+            <div class="tab-pane fade" id="parking" role="tabpanel" aria-labelledby="pills-contact-tab">
+              <p>Tab 3</p>
+              <a href="contact.html">Enlace 3</a>
+            </div>
+            <div class="tab-pane fade" id="pet" role="tabpanel" aria-labelledby="pills-contact-tab">
               <p>Tab 3</p>
               <a href="contact.html">Enlace 3</a>
             </div>
