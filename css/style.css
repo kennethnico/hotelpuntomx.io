@@ -252,6 +252,56 @@ th {
 .fontWhite{
   color: #FFF;
 }
+.fontPrimary{
+  color: var(--color-primario);
+}
+.fontSecond{
+  color: var(--color-secundario);
+}
+.fontHover{
+  color: var(--bg-hover);
+}
+/***********************************/
+/****************Banner Well*******************/
+.banner_well{
+  color: #FFF!important;
+  display: inline-flex;
+  min-height: 30px;
+  width: 90%;
+  justify-content: center;
+  background-color: rgba(0,0,0,0) !important;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.banner_well li{
+  min-height: 60px!important;
+  min-width: 30%;
+  color: #FFF!important;
+  display: grid;
+  grid-template-rows: 80px 20px;
+  justify-content: center;
+  align-content: center;
+}
+.banner_well li i{
+  font-size: 5rem;
+  margin: 15px 15px;
+  color: #FFF!important;
+}
+.banner_well li small{
+  font-size: 1.3rem;
+  line-height: 0;
+}
+/*****************Nav Pills******************/
+.nav-pills .nav-item .nav-link:active i{
+  color: #FFF;
+}
+.nav-pills .nav-item .nav-link:hover{
+  background-color: var(--color-primario);
+}
+.nav-pills .nav-item .nav-link:hover i{
+  color: #FFF;
+}
 /***********************************/
 /****************/
 :-moz-placeholder {
@@ -8202,9 +8252,8 @@ figure {
 }
 
 #fh5co-hero {
-  margin-bottom: 0;
   background: #fff url(../images/loader.gif) no-repeat center center;
-  margin-bottom: 0 !important;
+  margin-bottom: 7em !important;
   position: relative;
   display: -webkit-box;
   display: -moz-box;
@@ -8214,6 +8263,11 @@ figure {
   flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   -moz-flex-wrap: wrap;
+}
+@media screen and (max-width: 768px) {
+  #fh5co-hero{
+    margin-bottom: 0!important;
+  }
 }
 #fh5co-hero .btn {
   font-size: 24px;
@@ -9047,12 +9101,12 @@ div.cs-select span {
     margin-bottom: 40px;
   }
   #hotel-facilities{
-    height: 750px!important;
+    /*height: 750px!important;*/
   }
 }
 @media screen and (max-width: 768px) {
   #hotel-facilities{
-    height: 1000px!important;
+    /*height: 1000px!important;*/
   }
 }
 #fh5co-blog-section .desc h3 {
