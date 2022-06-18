@@ -24,7 +24,7 @@
   <meta name="twitter:card" content="" />
 
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="shortcut icon" href="assets/puntomx_ico.ico">
   <!-- <link href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700italic,900,700,900italic' rel='stylesheet' type='text/css'> -->
 
   <!-- Stylesheets -->
@@ -70,7 +70,7 @@
             <h1 id="fh5co-logo"><a href="index.html">LOGO</a></h1>
             <nav id="fh5co-menu-wrap" role="navigation">
               <ul class="sf-menu" id="fh5co-primary-menu">
-                <li><a class="active" href="index.html">Inicio</a></li>
+                <li><a class="" href="index.html">Inicio</a></li>
                 <li>
                   <a href="#" class="fh5co-sub-ddown">Hotel</a>
                   <ul class="fh5co-sub-menu">
@@ -94,7 +94,7 @@
                 </li>
                 <li><a href="cdmx.html">Conoce la CDMX</a></li>
                 <!--<li><a href="blog.html">Blog</a></li>-->
-                <li><a href="contact.html">Contacto</a></li>
+                <li><a href="contact.html" class="active">Contacto</a></li>
               </ul>
             </nav>
           </div>
@@ -103,14 +103,14 @@
 
     </div>
     <!-- end:fh5co-header -->
-    <div class="fh5co-parallax" style="background-image: url(images/slider1.jpg);" data-stellar-background-ratio="0.5">
+    <div class="fh5co-parallax" style="background: linear-gradient( rgba(0, 0, 0, 0.4) 100%, rgba(0, 0, 0, 0.2)100%),url(./assets/webp/AMENIDADES.jpeg); background-size: contain, cover; background-position: 0 bottom,0 bottom!important; background-repeat: repeat,no-repeat;" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
         <div class="row">
           <div class="col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center fh5co-table">
             <div class="fh5co-intro fh5co-table-cell">
+              <p>¿Tienes alguna duda?</p>
               <h1 class="text-center">Contáctanos</h1>
-              <p>Made with love</p>
             </div>
           </div>
         </div>
@@ -158,22 +158,22 @@
           <form class="contact_form" id="contactForm">
             <ul>
               <li>
-                <h2>Visítanos</h2>
+                <h2 class="cursiveFont fontHover">Déjanos un mensaje:</h2>
                 <!--<span class="required_notification">* Denotes Required Field</span>-->
               </li>
               <li>
-                <label for="from_name">Nombre:</label>
-                <input type="text" name="name" placeholder="Nombre" id="from_name" required />
+                <label for="from_name" class="cursiveFont">Nombre:</label>
+                <input type="text" name="name" class="borde_r" placeholder="Nombre" id="from_name" required />
                 <!--<span class="fa valid-icon"></span>-->
               </li>
               <li>
-                <label for="from_email">Email:</label>
+                <label for="from_email" class="cursiveFont">Email:</label>
                 <input type="email" name="email" placeholder="email@example.com" id="from_email" required />
                 <!--<span class="fa valid-icon"></span>-->
                 <span class="form_hint">Formato "email@domino.com"</span>
               </li>
               <li>
-                <label for="from_message">Mensaje:</label>
+                <label for="from_message" class="cursiveFont">Mensaje:</label>
                 <textarea name="message" cols="40" rows="6" required id="from_message"></textarea>
                 <!--<span class="fa valid-icon"></span>-->
               </li>

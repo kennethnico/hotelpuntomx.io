@@ -305,21 +305,22 @@ th {
 /***********************************/
 /****************/
 :-moz-placeholder {
-  color: #7F7F7F;
+  color:  var(--color-rgba-prim);
+
 }
 ::-webkit-input-placeholder {
-  color: #7F7F7F;
+  color: var(--color-rgba-prim);
 }
 *:focus {
   outline: none;
 }
 body, textarea {
-  font: 14px/21px "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  /*font: 14px/21px "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;*/
 }
 
 .contact_form h2,
 .contact_form label {
-  font-family: "Open Sans", Arial, serif;
+  /*font-family: "Open Sans", Arial, serif;*/
 }
 
 .form_hint,
@@ -363,10 +364,11 @@ body, textarea {
   display: inline-block;
   float: left;
   padding: 3px;
+  color: #000;
 }
 
 .contact_form input {
-  height: 20px;
+  height: 30px;
   width: 220px;
   padding: 5px 8px;
 }
@@ -383,8 +385,8 @@ body, textarea {
 .contact_form input,
 .contact_form textarea {
   border: 1px solid #aaa;
-  box-shadow: 0 0 3px #ccc, 0 10px 15px #eee inset;
-  border-radius: 2px;
+  /*box-shadow: 0 0 3px #ccc, 0 10px 15px #eee inset;*/
+  border-radius: 40px;
 }
 
 .contact_form input:focus,
