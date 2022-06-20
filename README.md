@@ -11,4 +11,4 @@
    - *RoomService* al 100%, podrían agregarse fotos.
  - Sección *"Conoce la CDMX"* al 100% *//Todas las fotografías son de Pexels, no necesitan atribución y no tienen derechos de autor.*
  - Sección *"Contacto"* al 100%, pero se sugiere una sección de Preguntas frecuente *(FAQ)*.
- - Sección del Footer en todas las secciones *Pendiente*.
+ - Sección del Footer en todas las secciones 95%, el funcionamiento en el Index.html es cuestionable.
