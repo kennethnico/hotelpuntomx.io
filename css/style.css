@@ -8943,6 +8943,34 @@ div.cs-select span {
   color: #52565b;
 }
 
+/* Estilos para motores Webkit y blink (Chrome, Safari, Opera... )*/
+
+.mybody::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.mybody::-webkit-scrollbar:vertical {
+  width:5px;
+}
+
+.mybody::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
+  display: none;
+}
+
+.mybody::-webkit-scrollbar:horizontal {
+  height: 10px;
+}
+
+.mybody::-webkit-scrollbar-thumb {
+  background-color: var(--color-secundario);
+  border-radius: 20px;
+  border: 2px solid rgba(0,0,0,0);
+}
+
+.mybody::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
 #fh5co-hotel-section .hotel-content .hotel-grid {
   background-repeat: no-repeat;
   background-size: cover;
