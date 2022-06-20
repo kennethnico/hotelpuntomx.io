@@ -401,7 +401,7 @@ label { font-weight: 700; }
 }
 
 .tm-d-table { display: table; }
-
+/*
 footer {
     background: var(--color-primario);
     padding-top: 40px;
@@ -409,7 +409,6 @@ footer {
     text-align: center;    
     font-size: 0.8rem;
 }
-
 footer a { color: #fff; }
 
 footer a:hover { color: #900; }
@@ -422,7 +421,7 @@ footer p { color: white; }
 }
 
 .tm-footer-text-highlight:hover { color: var(--color-secundario); }
-
+*/
 .tm-contact-form {
     background: white;
     width: 470px;
