@@ -46,6 +46,8 @@
 .titlePlace{
   text-transform: none!important;
   font-size: 8rem;
+  line-height: 30px;
+  margin-bottom: 40px!important;
 }
 .fixed-side-navbar {
   position: fixed;
