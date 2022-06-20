@@ -467,6 +467,7 @@ body, textarea {
 
 .contact_form li {
   position: relative;
+  padding-left: 50px;
 }
 .contact_form li input:required + .valid-icon,
 .contact_form li textarea:required + .valid-icon {
