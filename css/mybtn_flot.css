@@ -69,3 +69,30 @@
 .logo-wap{
     font-size: 1.1rem;
 }
+.footer_esp_ta{
+    width: 40px;
+    height: 40px!important;
+    border-radius: 50%;
+    background-image: url("../assets/logos/tripadvisor_g.png");
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: rgba(1,0,0,0);
+}
+.footer_esp_ta:hover {
+    background-color: var(--color-primario);
+}
+.circle_element{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.circle_element:hover {
+    background-color: var(--color-primario);
+}
+.circle_element img{
+    width: 30px;
+    height: 30px;
+    margin-top: -5px;
+    color: var(--gray)!important;
+}
