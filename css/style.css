@@ -81,7 +81,9 @@ a:active,
 a:hover {
   outline: 0;
 }
-
+button.btnHover:hover, button.btnHover:focus, button.btnHover:active {
+  color: var(--bg-hover)!important;
+}
 abbr[title] {
   border-bottom: 1px dotted;
 }
