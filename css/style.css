@@ -81,6 +81,10 @@ a:active,
 a:hover {
   outline: 0;
 }
+button.btnHover{
+  word-break: break-word!important;
+  white-space: unset!important;
+}
 button.btnHover:hover, button.btnHover:focus, button.btnHover:active {
   color: var(--bg-hover)!important;
 }
