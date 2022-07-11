@@ -273,6 +273,7 @@ th {
   color: #FFF!important;
   display: inline-flex;
   min-height: 30px;
+  height: 125px!important;
   width: 90%;
   justify-content: center;
   background-color: rgba(0,0,0,0) !important;
@@ -281,7 +282,7 @@ th {
   padding: 0;
 }
 .banner_well li{
-  min-height: 60px!important;
+  min-height: 80px!important;
   min-width: 30%;
   color: #FFF!important;
   display: grid;
@@ -296,7 +297,7 @@ th {
 }
 .banner_well li small{
   font-size: 1.3rem;
-  line-height: 0;
+  line-height: 1.2;
 }
 /*****************Nav Pills******************/
 .nav-pills .nav-item .nav-link:active i{
