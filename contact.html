@@ -512,7 +512,7 @@
                 <textarea name="message" cols="40" rows="6" required id="from_message"></textarea>
                 <!--<span class="fa valid-icon"></span>-->
                 <br>
-                <span id="responsemail" class="fontHover cursiveFont"></span>
+                <span id="response-mail" class="fontHover cursiveFont"> </span>
               </li>
               <li>
                 <input class="btn btn-primary btn-luxe-primary" type="button" value="Enviar" onclick="enviarEmail()" style="height: 40px; width: 90px; box-shadow: none; margin: auto;"/>
@@ -627,7 +627,7 @@
             document.getElementById("from_name").value = " ";
             document.getElementById("from_email").value= " ";
             document.getElementById("from_message").value= " ";
-            document.getElementById("responsemail").value="¡Gracias! Pronto estaremos en contacto.";
+            document.getElementById("response-mail").textContent = "¡Gracias! Pronto estaremos en contacto.";
           }, function(error) {
             console.log('FAILED...', error);
           });
