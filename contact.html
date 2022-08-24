@@ -511,6 +511,8 @@
                 <label for="from_message" class="cursiveFont">Mensaje:</label>
                 <textarea name="message" cols="40" rows="6" required id="from_message"></textarea>
                 <!--<span class="fa valid-icon"></span>-->
+                <br>
+                <span id="response-mail" class="fontHover cursiveFont"> </span>
               </li>
               <li>
                 <input class="btn btn-primary btn-luxe-primary" type="button" value="Enviar" onclick="enviarEmail()" style="height: 40px; width: 90px; box-shadow: none; margin: auto;"/>
@@ -622,6 +624,10 @@
   emailjs.send('service_orh2159', 'template_e4xoh8b', templateParams)
           .then(function(response) {
             console.log('SUCCESS!', response.status, response.text);
+            document.getElementById("from_name").value = " ";
+            document.getElementById("from_email").value= " ";
+            document.getElementById("from_message").value= " ";
+            document.getElementById("response-mail").textContent = "¡Gracias! Pronto estaremos en contacto.";
           }, function(error) {
             console.log('FAILED...', error);
           });
