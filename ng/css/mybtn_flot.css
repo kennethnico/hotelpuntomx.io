@@ -1,0 +1,101 @@
+.mybtn-flotante {
+    font-size: 16px; /* Cambiar el tamaño de la tipografia */
+    text-transform: uppercase; /* Texto en mayusculas */
+    font-weight: bold; /* Fuente en negrita o bold */
+    color: #ffffff; /* Color del texto */
+    border-radius: 5px; /* Borde del boton */
+    letter-spacing: 2px; /* Espacio entre letras */
+    background-color: var(--color-primario); /* Color de fondo */
+    padding: 12px; /* Relleno del boton */
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    transition: all 300ms ease 0ms;
+    border-color: var(--bg-hover);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.7);
+    z-index: 99;
+}
+.mybtn-flotante:hover {
+    background-color: var(--bg-hover); /* Color de fondo al pasar el cursor */
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-7px);
+    color: #FFF!important;
+}
+@media only screen and (max-width: 600px) {
+    .mybtn-flotante {
+        font-size: 14px;
+        padding: 12px 20px;
+        bottom: 20px;
+        right: 20px;
+    }
+}
+.text-rsv{
+    font-size: 1.1rem;
+}
+.mywap-flotante {
+    width: 50px;
+    height: 50px;
+    font-size: 30px; /* Cambiar el tamaño de la tipografia */
+    text-transform: uppercase; /* Texto en mayusculas */
+    font-weight: bold; /* Fuente en negrita o bold */
+    color: #ffffff; /* Color del texto */
+    border-radius: 50%; /* Borde del boton */
+    /*letter-spacing: 2px; /* Espacio entre letras */
+    background-color: #00BB2D; /* Color de fondo */
+    /*padding: 5px; /* Relleno del boton */
+    text-align: center;
+    position: fixed;
+    bottom: 100px;
+    right: 40px;
+    transition: all 300ms ease 0ms;
+    border-color: var(--color-secundario);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.7);
+    z-index: 99;
+}
+.mywap-flotante:hover {
+    color: var(--bg-hover); /* Color de fondo al pasar el cursor */
+    background-color: #FFF;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    transform: translateY(-7px);
+}
+@media only screen and (max-width: 600px) {
+    .mywap-flotante {
+        font-size: 30px;
+        /*padding: 12px 20px;*/
+        bottom: 80px;
+        right: 20px;
+    }
+}
+.logo-wap{
+    font-size: 1.1rem;
+}
+.footer_esp_ta{
+    width: 40px;
+    height: 40px!important;
+    border-radius: 50%;
+    background-image: url("../assets/logos/tripadvisor_g.png");
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: rgba(1,0,0,0);
+}
+.footer_esp_ta:hover {
+    background-color: var(--color-primario);
+}
+.circle_element{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.circle_element:hover {
+    background-color: var(--color-primario);
+}
+.circle_element img{
+    width: 30px;
+    height: 30px;
+    margin-top: -5px;
+    color: var(--gray)!important;
+}
+footer#footer{
+    text-align: center!important;
+}
