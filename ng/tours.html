@@ -33,7 +33,23 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/slider.css">
   <link rel="stylesheet" href="css/mybtn_flot.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <script src="js/modernizr-2.6.2.min.js"></script>
+  <style>
+    .window_size{
+      height: 95vh!important;
+    }
+    @media screen and (max-width: 990px) {
+      .window_size{
+        height: 70vh!important;
+      }
+    }
+    @media screen and (max-width: 758px) {
+      .window_size{
+        height: 65vh!important;
+      }
+    }
+  </style>
 </head>
 <body class="mybody">
 <!------ modals ------->
@@ -208,7 +224,7 @@
         <div class="container">
           <div class="nav-header">
             <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
-            <h1 id="fh5co-logo"><a href="index.html"><img src="assets/logos/puntomx_ico.ico" alt="Logo de Hoteles Punto MX" height="80px" srcset=""></a></h1>
+            <!--<h1 id="fh5co-logo"><a href="index.html"><img src="assets/logos/puntomx_ico.ico" alt="Logo de Hoteles Punto MX" height="80px" srcset=""></a></h1>-->
             <nav id="fh5co-menu-wrap" role="navigation">
               <ul class="sf-menu" id="fh5co-primary-menu">
                 <li><a href="index.html">Home</a></li>
@@ -225,7 +241,7 @@
                 <li><a href="cdmx.html">Meet CDMX</a></li>
                 <li><a href="tours.html" class="active">Tours</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="../roomservice.html" target="_self">Esp</a></li>
+                <li><a href="../tours.html" target="_self">Esp</a></li>
               </ul>
             </nav>
           </div>
@@ -233,7 +249,7 @@
       </header>
     </div>
     <!-- end:fh5co-header -->
-    <div class="fh5co-parallax" style="height: 95vh!important; background: linear-gradient( rgba(0, 0, 0, 0.7) 100%, rgba(0, 0, 0, 0.5)100%),url(./assets/webp/ROOM_SERVICE_2.jpeg); background-size: contain, cover; background-position: 0 bottom,right bottom!important; background-repeat: repeat,no-repeat;" data-stellar-background-ratio="0.5">
+    <div class="fh5co-parallax window_size" style="background: linear-gradient( rgba(0, 0, 0, 0.7) 100%, rgba(0, 0, 0, 0.5)100%),url(./assets/webp/Punto_MX-32.jpeg); background-size: contain, cover; background-position: 0 bottom,right bottom!important; background-repeat: repeat,no-repeat;" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
         <div class="row">
@@ -364,9 +380,12 @@
 </div>
 <!-- Javascripts -->
 <script src="js/jquery-2.1.4.min.js"></script>
+<!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>-->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="js/hoverIntent.js"></script>
 <script src="js/superfish.js"></script>
-<script src="js/bootstrap.min.js"></script>
+<!--<script src="js/bootstrap.min.js"></script>-->
 <script src="js/jquery.waypoints.min.js"></script>
 <script src="js/jquery.countTo.js"></script>
 <script src="js/jquery.stellar.min.js"></script>
