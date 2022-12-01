@@ -521,5 +521,49 @@
 <script src="js/selectFx.js"></script>
 <script src="js/jquery.flexslider-min.js"></script>
 <script src="js/custom.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script>
+  const date_t = document.getElementById('date_tour');
+  date_t.min = new Date().toISOString().split("T")[0];
+  function enviarTours(){
+    (function(){
+      emailjs.init("7y55EjOorzlD_0m9_");
+    })();
+    let name = document.getElementById("name_tour").value;
+    let email = document.getElementById("email_tour").value;
+    let date = document.getElementById("date_tour").value;
+    let people = document.getElementById("people_tour").value;
+    let tour = document.getElementById("tour_tour").value;
+    let day = document.getElementById("day_tour").value;
+    let request = document.getElementById("request_tour").value;
+    let phone = document.getElementById("phone_tour").value;
+    let templateParams = {
+      from_name: name,
+      from_email: email,
+      from_phone: phone,
+      from_date: date,
+      from_people: people,
+      from_tour: tour,
+      from_day: day,
+      from_request: request,
+      to_name: 'HotelPuntoMx'
+    };
+    emailjs.send('service_2cox8vo', 'template_n8t23g5', templateParams)
+            .then(function(response) {
+              console.log('SUCCESS!', response.status, response.text);
+              document.getElementById("name_tour").value=" ";
+              document.getElementById("email_tour").value=" ";
+              document.getElementById("date_tour").value=" ";
+              document.getElementById("people_tour").value=" ";
+              document.getElementById("tour_tour").value=" ";
+              document.getElementById("day_tour").value=" ";
+              document.getElementById("request_tour").value=" ";
+              document.getElementById("phone_tour").value=" ";
+              document.getElementById("response-mail").textContent = "¡Thank you! Your information has been recieved.";
+            }, function(error) {
+              console.log('FAILED...', error);
+            });
+  }
+</script>
 </body>
 </html>
