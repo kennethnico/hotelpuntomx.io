@@ -502,9 +502,14 @@
         emailjs.send('service_2cox8vo', 'template_n8t23g5', templateParams)
             .then(function(response) {
                 console.log('SUCCESS!', response.status, response.text);
-                document.getElementById("from_name").value = " ";
-                document.getElementById("from_email").value= " ";
-                document.getElementById("from_message").value= " ";
+                document.getElementById("name_tour").value=" ";
+                document.getElementById("email_tour").value=" ";
+                document.getElementById("date_tour").value=" ";
+                document.getElementById("people_tour").value=" ";
+                document.getElementById("tour_tour").value=" ";
+                document.getElementById("day_tour").value=" ";
+                document.getElementById("request_tour").value=" ";
+                document.getElementById("phone_tour").value=" ";
                 document.getElementById("response-mail").textContent = "¡Gracias! Pronto estaremos en contacto.";
             }, function(error) {
                 console.log('FAILED...', error);
