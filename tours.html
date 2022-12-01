@@ -319,6 +319,85 @@
                 <a href="https://api.whatsapp.com/send/?phone=5618887875&text&app_absent=0" target="_blank" class="mywap-flotante text-rsv"><i class="fa-brands fa-whatsapp"></i></a>
             </div>
         </div>
+        <!------------------------------------------->
+        <!------------------------------------------->
+        <div id="fh5co-contact-section" style=" display:flex; flex-direction: column-reverse; padding-top: 1.5rem!important; padding-bottom: 0.5rem!important;">
+            <div class="row">
+                <div class="col-md-6">
+                    <form class="contact_form" id="contactForm2">
+                        <ul>
+                            <li>
+                                <h2 class="cursiveFont fontHover">Reserva aquí:</h2>
+                                <!--<span class="required_notification">* Denotes Required Field</span>-->
+                            </li>
+                            <li>
+                                <label for="name_tour" class="cursiveFont">Nombre:</label>
+                                <input type="text" name="name" class="borde_r" placeholder="Nombre" id="name_tour" required />
+                                <!--<span class="fa valid-icon"></span>-->
+                            </li>
+                            <li>
+                                <label for="phone_tour" class="cursiveFont">Teléfono:</label>
+                                <input type="number" name="phone" class="borde_r" placeholder="Teléfono" id="phone_tour" required />
+                                <!--<span class="fa valid-icon"></span>-->
+                            </li>
+                            <li>
+                                <label for="email_tour" class="cursiveFont">Email:</label>
+                                <input type="email" name="email" placeholder="email@example.com" id="email_tour" required />
+                                <!--<span class="fa valid-icon"></span>-->
+                                <span class="form_hint">Formato "email@domino.com"</span>
+                            </li>
+                            <li>
+                                <label for="date_tour" class="cursiveFont">Fecha de llegada:</label>
+                                <input type="date" name="date" placeholder="dd/mm/aaaa" id="date_tour" required />
+                                <!--<span class="fa valid-icon"></span>-->
+                                <br>
+                                <!--<span id="response-mail" class="fontHover cursiveFont"> </span>-->
+                            </li>
+                            <li>
+                                <label for="people_tour" class="cursiveFont">Número de Personas:</label>
+                                <input type="number" name="people" class="borde_r" placeholder="# de Personas" id="people_tour" step="1" required />
+                                <!--<span class="fa valid-icon"></span>-->
+                            </li>
+                            <li>
+                            <!--<input class="btn btn-primary btn-luxe-primary" type="button" value="Enviar" onclick="enviarEmail()" style="height: 40px; width: 90px; box-shadow: none; margin: auto;"/>-->
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <form class="contact_form" id="contactForm3">
+                        <ul>
+                            <li>
+                                <h2 class="cursiveFont fontHover">Información para el servicio:</h2>
+                                <!--<span class="required_notification">* Denotes Required Field</span>-->
+                            </li>
+                            <li>
+                                <label for="tour_tour" class="cursiveFont">Recorrido de su preferencia:</label>
+                                <input type="text" name="tour" class="borde_r" placeholder="Nombre" id="tour_tour" required />
+                                <!--<span class="fa valid-icon"></span>-->
+                            </li>
+                            <li>
+                                <label for="day_tour" class="cursiveFont">Día del recorrido:</label>
+                                <input type="date" name="day" class="borde_r" placeholder="Día para el recorrido" id="day_tour" required />
+                                <!--<span class="fa valid-icon"></span>-->
+                            </li>
+                            <li>
+                                <label for="request_tour" class="cursiveFont">Peticiones Especiales:</label>
+                                <textarea name="request" cols="40" rows="6" required id="request_tour"></textarea>
+                                <!--<span class="fa valid-icon"></span>-->
+                                <br>
+                                <span id="response-mail" class="fontHover cursiveFont"> </span>
+                            </li>
+                            <li>
+                                <input class="btn btn-primary btn-luxe-primary" type="button" value="Enviar" onclick="enviarEmail()" style="height: 40px; width: 90px; box-shadow: none; margin: auto;"/>
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!------------------------------------------->
+        <!------------------------------------------->
         <footer id="footer" class="fh5co-bg-color">
             <div class="container">
                 <div class="row">
@@ -394,5 +473,43 @@
 <script src="js/selectFx.js"></script>
 <script src="js/jquery.flexslider-min.js"></script>
 <script src="js/custom.js"></script>
+<script>
+    const date_t = document.getElementById('date_tour');
+    date_t.min = new Date().toISOString().split("T")[0];
+    function enviarTours(){
+        (function(){
+            emailjs.init("7y55EjOorzlD_0m9_");
+        })();
+        let name = document.getElementById("name_tour").value;
+        let email = document.getElementById("email_tour").value;
+        let date = document.getElementById("date_tour").value;
+        let people = document.getElementById("people_tour").value;
+        let tour = document.getElementById("tour_tour").value;
+        let day = document.getElementById("day_tour").value;
+        let request = document.getElementById("request_tour").value;
+        let phone = document.getElementById("phone_tour").value;
+        let templateParams = {
+            from_name: name,
+            from_email: email,
+            from_phone: phone,
+            from_date: date,
+            from_people: people,
+            from_tour: tour,
+            from_day: day,
+            from_request: request,
+            to_name: 'HotelPuntoMx'
+        };
+        emailjs.send('service_2cox8vo', 'template_e4xoh8b', templateParams)
+            .then(function(response) {
+                console.log('SUCCESS!', response.status, response.text);
+                document.getElementById("from_name").value = " ";
+                document.getElementById("from_email").value= " ";
+                document.getElementById("from_message").value= " ";
+                document.getElementById("response-mail").textContent = "¡Gracias! Pronto estaremos en contacto.";
+            }, function(error) {
+                console.log('FAILED...', error);
+            });
+    }
+</script>
 </body>
 </html>
