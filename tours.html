@@ -48,6 +48,9 @@
             .window_size{
                 height: 85vh!important;
             }
+            .contact_form li {
+                padding-left: 20px!important;
+            }
         }
         input[type=number]::-webkit-inner-spin-button,
         input[type=number]::-webkit-outer-spin-button {
@@ -383,8 +386,7 @@
                                 <!--<span class="required_notification">* Denotes Required Field</span>-->
                             </li>
                             <li>
-                                <label for="tour_tour" class="cursiveFont">Recorrido:</label>
-                                <!--<input type="text" name="tour" class="borde_r" placeholder="Nombre" id="tour_tour" required />-->
+                                <label for="tour_tour" class="cursiveFont" style="width: 100px;">Recorrido:</label>
                                 <select name="tour" class="borde_r" id="tour_tour" required>
                                     <option value="Piramides de Teotihuacán">Piramides de Teotihuacán</option>
                                     <option value="Teotihuacán aéreo">Teotihuacán aéreo</option>
@@ -397,21 +399,25 @@
                                     <option value="Piramides y Safari">Piramides y Safari</option>
                                     <option value="Grutas de Tolantongo">Grutas de Tolantongo</option>
                                 </select>
-                                <!--<span class="fa valid-icon"></span>-->
                             </li>
                             <li>
-                                <label for="day_tour" class="cursiveFont">Día del recorrido:</label>
+                                <label for="day_tour" class="cursiveFont" style="font-size: 1.4rem; width: 100px;">Día del recorrido:</label>
                                 <input type="date" name="day" class="borde_r" placeholder="Día para el recorrido" id="day_tour" required />
                                 <!--<span class="fa valid-icon"></span>-->
                             </li>
                             <li>
-                                <label for="request_tour" class="cursiveFont">Peticiones Especiales:</label>
-                                <textarea name="request" cols="30" rows="4" required id="request_tour"></textarea>
-                                <!--<span class="fa valid-icon"></span>-->
-                                <br>
-                                <span id="response-mail" class="fontHover cursiveFont"> </span>
+                            <!--    <label for="request_tour" class="cursiveFont" style="font-size: 1.4rem; width: 100px;">Peticiones Especiales:</label>
+                                <input type="text" name="request" class="borde_r" placeholder="Peticiones especiales" id="request_tour" required />
+                                -->
                             </li>
                             <li>
+                                <label for="request_tour" class="cursiveFont" style="font-size: 1.4rem; width: 100px;">Peticiones Especiales:</label>
+                                <input type="text" name="request" class="borde_r" placeholder="Peticiones especiales" id="request_tour" required />
+                                <!--<textarea name="request" cols="25" rows="3" required id="request_tour" style=""></textarea>-->
+                                <!--<span class="fa valid-icon"></span>-->
+                            </li>
+                            <li>
+                                <span id="response-mail" class="fontHover cursiveFont"> </span>
                                 <input class="btn btn-primary btn-luxe-primary" type="button" value="Enviar" onclick="enviarTours()" style="height: 40px; width: 90px; font-size: 1.3rem; text-align: center; padding: 0;  box-shadow: none; margin: auto;"/>
                             </li>
                         </ul>
