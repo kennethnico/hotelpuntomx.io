@@ -48,8 +48,11 @@
       .window_size{
         height: 85vh!important;
       }
+      .contact_form li {
+        padding-left: 20px!important;
+      }
     }
-    @media screen and (max-width: 450px) {
+    @media screen and (max-width: 580px) {
       .window_size{
         height: 50vh!important;
       }
@@ -416,14 +419,18 @@
                 <input type="date" name="day" class="borde_r" placeholder="dd/mm/yyyy" id="day_tour" required />
                 <!--<span class="fa valid-icon"></span>-->
               </li>
+              <!--
               <li>
                 <label for="request_tour" class="cursiveFont">Special requests:</label>
                 <textarea name="request" cols="30" rows="4" required id="request_tour"></textarea>
-                <!--<span class="fa valid-icon"></span>-->
-                <br>
-                <span id="response-mail" class="fontHover cursiveFont"> </span>
+              </li>
+              -->
+              <li>
+                <label for="request_tour" class="cursiveFont" style="font-size: 1.4rem; width: 100px;">Special requests:</label>
+                <input type="text" name="request" class="borde_r" placeholder="Special requests" id="request_tour" required />
               </li>
               <li>
+                <span id="response-mail" class="fontHover cursiveFont"> </span>
                 <input class="btn btn-primary btn-luxe-primary" type="button" value="Send" onclick="enviarTours()" style="height: 40px; width: 90px; font-size: 1.3rem; text-align: center; padding: 0;  box-shadow: none; margin: auto;"/>
               </li>
             </ul>
