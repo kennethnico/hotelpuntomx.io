@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejemplo</title>
+  <style type="text/css" media="screen">
+    :root {
+      --carousel-height: 20rem;
+      --carousel-width: 40rem;
+    }
+    /* Oculta el scroll horizontal */
+    .carousel {
+      height: var(--carousel-height);
+      overflow: hidden;
+      width: var(--carousel-width);
+    }
+
+    .carousel__container {
+      scroll-snap-type: x mandatory;
+      display: flex;
+      overflow-x: auto;
+    }
+
+    .carousel__slider {
+      height: var(--carousel-height);
+      min-width: var(--carousel-width);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      scroll-snap-align: start;
+    }
+
+    .carousel__slider--1 {
+      background-image: url("https://source.unsplash.com/featured/1000x400/?fish");
+    }
+
+    .carousel__slider--2 {
+      background-image: url("https://source.unsplash.com/featured/1000x400/?cat");
+    }
+
+    .carousel__slider--3 {
+      background-image: url("https://source.unsplash.com/featured/1000x400/?dog");
+    }
+
+    /* Estilos para la demo, pueden ser borrados */
+    .carousel__slider h1,
+    .carousel__slider p {
+      color: white;
+      text-shadow: 1px 1px 5px black;
+    }
+    /* Fin Estilos para la demo, pueden ser borrados */
+  </style>
+</head>
+<body>
+<section class="carousel">
+  <div class="carousel__container">
+    <article class="carousel__slider carousel__slider--1">
+      <h1>Mi título 1</h1>
+      <p>Mi HTML 1</p>
+    </article>
+    <article class="carousel__slider carousel__slider--2">
+      <h1>Mi título 2</h1>
+      <p>Mi HTML 2</p>
+    </article>
+    <article class="carousel__slider carousel__slider--3">
+      <h1>Mi título 3</h1>
+      <p>Mi HTML 3</p>
+    </article>
+  </div>
+</section>
+<script>
+  // Variables
+  const SEGUNDOS_ENTRE_SLIDERS = 2; // <---- IMPORTANT
+  const CAROUSEL = document.querySelector(".carousel");
+  const SLIDERS = CAROUSEL.querySelectorAll(".carousel__slider");
+  let observerCarousel;
+
+  // Funciones
+
+  async function autoPlay(posicionPartida = SLIDERS.length) {
+    // Elimina los IntersectionObserver para evitar que se reproduzca si no mira el usuario
+    if(observerCarousel !== undefined) observerCarousel.unobserve(CAROUSEL)
+
+    // Obtiene el siguiente indice
+    const SIGUIENTE_POSICION =
+            SLIDERS.length - 1 > posicionPartida ? posicionPartida + 1 : 0;
+    // Mueve el scroll al siguiente slider
+    SLIDERS[SIGUIENTE_POSICION].scrollIntoView({ block: "center" });
+    // Retardo antes de volver a ejecutarse
+    await new Promise((res) => {
+      setTimeout(res, SEGUNDOS_ENTRE_SLIDERS * 1000);
+    });
+    // Ejecutamos el autoPlay únicamente cuando sea visible
+    // Creamos un objeto IntersectionObserver
+    observerCarousel = new IntersectionObserver((entries) => {
+      // Comprobamos todas las intesecciones.
+      entries.forEach((entry) => {
+        // Si es observable, entra
+        if (entry.isIntersecting) {
+          // Activamos
+          autoPlay(SIGUIENTE_POSICION)
+        }
+      });
+    });
+
+    // Añado a mi Observable que quiero observar. En este caso el carousel
+    observerCarousel.observe(CAROUSEL);
+  }
+
+  // Ejecuta
+  autoPlay();
+</script>
+</body>
+</html>
+

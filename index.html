@@ -41,6 +41,8 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/carrusel_feb.css">
   <script src="js/modernizr-2.6.2.min.js"></script>
+
+  <!------------------------------------------------->
   <!------------------------------------------------->
   <style>
     .gallery {
@@ -67,6 +69,9 @@
       font-size: 0;
     }
   </style>
+  <!------------------------------------------------->
+  <!------------------------------------------------->
+
   <!------------------------------------------------->
 </head>
 <body class="mybody">
@@ -252,15 +257,19 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-body">
-        <div class="carrito">
-          <button id="retroceder">Retroceder</button>
-          <div id="imash"></div>
-          <button id="avanzar">Avanzar</button>
-        </div>
-        <div class="controles">
-          <button id="play">Play</button>
-          <button id="stop" disabled>Stop</button>
-        </div>
+        <section class="carousel">
+          <div class="carousel__container">
+            <article class="carousel__slider carousel__slider--1">
+              <video autoplay muted loop id="myVideo">
+                <source src="./images/february/vid.mp4" type="video/mp4">
+              </video>
+            </article>
+            <article class="carousel__slider carousel__slider--2">
+            </article>
+            <article class="carousel__slider carousel__slider--3">
+            </article>
+          </div>
+        </section>
       </div>
     </div>
   </div>
@@ -906,7 +915,6 @@
 <script src="js/jquery.flexslider-min.js"></script>
 <script src="js/custom.js"></script>
 <script src="js/particles.js"></script>
-<script src="js/carFeb.js"></script>
 <script>
   window.onload = function() {
     Particles.init({selector: '.myheart-flotante'});
@@ -941,6 +949,46 @@
     const walk = (x - startX) * SCROLL_SPEED;
     slider.scrollLeft = scrollLeft - walk;
   });
+</script>
+<script>
+  // Variables
+  const SEGUNDOS_ENTRE_SLIDERS = 8; // <---- IMPORTANT
+  const CAROUSEL = document.querySelector(".carousel");
+  const SLIDERS = CAROUSEL.querySelectorAll(".carousel__slider");
+  let observerCarousel;
+
+  // Funciones
+
+  async function autoPlay(posicionPartida = SLIDERS.length) {
+    // Elimina los IntersectionObserver para evitar que se reproduzca si no mira el usuario
+    if(observerCarousel !== undefined) observerCarousel.unobserve(CAROUSEL)
+
+    // Obtiene el siguiente indice
+    const SIGUIENTE_POSICION =
+            SLIDERS.length - 1 > posicionPartida ? posicionPartida + 1 : 0;
+    // Mueve el scroll al siguiente slider
+    SLIDERS[SIGUIENTE_POSICION].scrollIntoView({ block: "center" });
+    // Retardo antes de volver a ejecutarse
+    await new Promise((res) => {
+      setTimeout(res, SEGUNDOS_ENTRE_SLIDERS * 1000);
+    });
+    // Ejecutamos el autoPlay únicamente cuando sea visible
+    // Creamos un objeto IntersectionObserver
+    observerCarousel = new IntersectionObserver((entries) => {
+      // Comprobamos todas las intesecciones.
+      entries.forEach((entry) => {
+        // Si es observable, entra
+        if (entry.isIntersecting) {
+          // Activamos
+          autoPlay(SIGUIENTE_POSICION)
+        }
+      });
+    });
+    // Añado a mi Observable que quiero observar. En este caso el carousel
+    observerCarousel.observe(CAROUSEL);
+  }
+  // Ejecuta
+  autoPlay();
 </script>
 </body>
 </html>
