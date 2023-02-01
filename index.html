@@ -908,6 +908,9 @@
 <script src="js/particles.js"></script>
 <script src="js/carFeb.js"></script>
 <script>
+  window.onload = function() {
+    Particles.init({selector: '.myheart-flotante'});
+  };
   $(document).ready(function() {
     $('#modalProm').modal('show');
   });
@@ -938,13 +941,6 @@
     const walk = (x - startX) * SCROLL_SPEED;
     slider.scrollLeft = scrollLeft - walk;
   });
-  window.onload = function() {
-    Particles.init
-    ({
-      selector: '.myheart-flotante'
-    });
-  };
 </script>
-<script src="js/particles.js"></script>
 </body>
 </html>
