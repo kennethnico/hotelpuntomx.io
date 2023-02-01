@@ -26,6 +26,13 @@
     scroll-snap-align: start;
 }
 
+ @media only screen and (max-width: 600px) {
+     :root {
+         --carousel-height: 65rem;
+         --carousel-width: 35rem;
+     }
+ }
+
 
 .carousel__slider--1 {
     /*background-image: url("https://source.unsplash.com/featured/1000x400/?dog");*/
