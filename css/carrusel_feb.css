@@ -44,24 +44,3 @@
 .carousel__slider--3 {
     background-image: url("../images/february/cena_01.jpeg");
 }
- *::-webkit-scrollbar:vertical {
-     width:5px;
- }
-
- *::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
-     display: none;
- }
-
- *::-webkit-scrollbar:horizontal {
-     height: 10px;
- }
-
- *::-webkit-scrollbar-thumb {
-     background-color: var(--color-secundario)!important;
-     border-radius: 20px;
-     border: 2px solid rgba(0,0,0,0);
- }
-
- *::-webkit-scrollbar-track {
-     border-radius: 10px;
- }
