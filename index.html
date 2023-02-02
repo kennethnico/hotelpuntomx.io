@@ -69,30 +69,23 @@
       font-size: 0;
     }
 
-    .carousel__container::-webkit-scrollbar:vertical {
-      width:5px;
+    body::-webkit-scrollbar {
+      width: 12px;               /* width of the entire scrollbar */
     }
 
-    .carousel__container::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
-      display: none;
+    body::-webkit-scrollbar-track {
+      background: orange;        /* color of the tracking area */
     }
 
-    .carousel__container::-webkit-scrollbar:horizontal {
-      height: 10px;
+    body::-webkit-scrollbar-thumb {
+      background-color: blue;    /* color of the scroll thumb */
+      border-radius: 20px;       /* roundness of the scroll thumb */
+      border: 3px solid orange;  /* creates padding around scroll thumb */
     }
-
-    .carousel__container::-webkit-scrollbar-thumb {
-      background-color: var(--color-secundario)!important;
-      border-radius: 20px;
-      border: 2px solid rgba(0,0,0,0);
-    }
-    .carousel__container::-webkit-scrollbar-thumb {
-      background-color: var(--color-secundario)!important;
-      border-radius: 20px;
-      border: 2px solid rgba(0,0,0,0);
-    }
-    .carousel__container::-webkit-scrollbar-track {
-      border-radius: 10px;
+    .modal{
+      overflow:hidden;
+      overflow-y:scroll;
+      padding-right:0 !important;
     }
   </style>
   <!------------------------------------------------->

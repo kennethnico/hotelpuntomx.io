@@ -44,3 +44,30 @@
 .carousel__slider--3 {
     background-image: url("../images/february/cena_01.jpeg");
 }
+/*
+
+    .carousel__container::-webkit-scrollbar:vertical {
+      width:5px;
+    }
+
+    .carousel__container::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
+      display: none;
+    }
+
+    .carousel__container::-webkit-scrollbar:horizontal {
+      height: 10px;
+    }
+
+    .carousel__container::-webkit-scrollbar-thumb {
+      background-color: var(--color-secundario)!important;
+      border-radius: 20px;
+      border: 2px solid rgba(0,0,0,0);
+    }
+    .carousel__container::-webkit-scrollbar-thumb {
+      background-color: var(--color-secundario)!important;
+      border-radius: 20px;
+      border: 2px solid rgba(0,0,0,0);
+    }
+    .carousel__container::-webkit-scrollbar-track {
+      border-radius: 10px;
+*/
