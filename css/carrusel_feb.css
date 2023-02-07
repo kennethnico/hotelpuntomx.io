@@ -1,6 +1,6 @@
  :root {
-     --carousel-height: 72rem;
-     --carousel-width: 40rem;
+     --carousel-height: 60rem;
+     --carousel-width: 38rem;
                      }
 /* Oculta el scroll horizontal */
 .carousel {
@@ -16,6 +16,7 @@
     scroll-snap-type: x mandatory;
     display: flex;
     overflow-x: auto;
+    overflow-y: hidden;
 }
 .carousel__slider {
     height: var(--carousel-height);
@@ -39,10 +40,12 @@
 }
 .carousel__slider--2 {
     background-image: url("../images/february/main.jpeg");
+    background-size: contain;
 }
 
 .carousel__slider--3 {
     background-image: url("../images/february/cena_01.jpeg");
+    background-size: contain;
 }
 /*
 
