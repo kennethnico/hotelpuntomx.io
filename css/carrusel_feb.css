@@ -1,6 +1,6 @@
  :root {
      --carousel-height: 60rem;
-     --carousel-width: 38rem;
+     --carousel-width: 35rem;
                      }
 /* Oculta el scroll horizontal */
 .carousel {
