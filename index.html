@@ -247,6 +247,7 @@
 </div>
 <!------------>
 <!-- Modal especial event-->
+<!-- Usar este fragmento de codigo para mostrar promociones del mes || Cambiar la imagen-->
 <div class="modal fade" id="modalProm" tabindex="-1" aria-labelledby="modalLabelProm" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -927,10 +928,10 @@
 <script src="js/particles.js"></script>
 <script>
   window.onload = function() {
-    /*Particles.init({selector: '.myheart-flotante'});*/
+    Particles.init({selector: '.myheart-flotante'});
   };
   $(document).ready(function() {
-    $('#modalProm').modal('show');
+    /*$('#modalProm').modal('show');*/
   });
   const slider = document.querySelector('.gallery');
   let isDown = false;
