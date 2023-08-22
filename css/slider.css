@@ -85,6 +85,11 @@
     height: 600px!important;
     max-width: 500px!important;
 }
+#img-tres{
+    /*height: 700px!important;*/
+    min-height: 60% !important;
+    width: auto;
+}
 /*.modal-content*/
 .my-mod-c{
     margin: auto;
@@ -114,5 +119,8 @@
     .my-mod-d{
         max-width: 600px;
         margin: 30px auto;
+    }
+    .my-mod-temp{
+        margin-top: 250px!important;
     }
 }
