@@ -77,11 +77,13 @@
     background-size: cover;
     overflow: hidden;
 }
-.modal-content {
+/*.modal-content*/
+.my-mod-c{
     width: 700px;
     border:none;
 }
-.modal-body {
+/*.modal-body*/
+.my-mod-b {
     padding: 0;
 }
 
