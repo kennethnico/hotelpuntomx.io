@@ -72,13 +72,22 @@
 .img-size{
     /* 	padding: 0;
         margin: 0; */
-    height: 450px;
-    width: 700px;
-    background-size: cover;
+
+    background-size: contain;
     overflow: hidden;
+}
+#img-uno{
+    margin-left: auto!important;
+    height: 400px!important;
+    max-width: 500px!important;
+}
+#img-dos{
+    height: 450px!important;
+    width: 700px!important;
 }
 /*.modal-content*/
 .my-mod-c{
+    margin: auto;
     width: 700px;
     border:none;
 }
