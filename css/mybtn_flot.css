@@ -90,7 +90,9 @@
     color: #ffffff!important; /* Color del texto */
     border-radius: 50%; /* Borde del boton */
     /*letter-spacing: 2px; /* Espacio entre letras */
-    background-color: var(--color-primario); /* Color de fondo */
+    /*background-color: var(--color-primario); /* Color de fondo */
+    background-image: url("./../images/infobg.png");
+    background-size: cover;
     /*padding: 5px; /* Relleno del boton */
     text-align: center;
     position: fixed;
