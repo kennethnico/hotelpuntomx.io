@@ -86,9 +86,9 @@
     max-width: 500px!important;
 }
 #img-tres{
-    /*height: 700px!important;*/
-    min-height: 60% !important;
-    width: auto;
+    height: 500px!important;
+    min-height: 70% !important;
+    width: auto!important;
 }
 /*.modal-content*/
 .my-mod-c{
