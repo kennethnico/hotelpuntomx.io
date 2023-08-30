@@ -1,596 +1,765 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Contacto - Hoteles PUNTO MX</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Website Hoteles PUNTO MX" />
-  <meta name="keywords" content="Hoteles, CDMX, PUNTOMX, TURISTA" />
-  <meta name="author" content="eknr" />
-
-  <!-- Facebook and Twitter integration -->
-  <meta property="og:title" content=""/>
-  <meta property="og:image" content=""/>
-  <meta property="og:url" content=""/>
-  <meta property="og:site_name" content=""/>
-  <meta property="og:description" content=""/>
-  <meta name="twitter:title" content="" />
-  <meta name="twitter:image" content="" />
-  <meta name="twitter:url" content="" />
-  <meta name="twitter:card" content="" />
-  <link rel="shortcut icon" href="assets/logos/puntomx_ico.ico">
-  <!-- <link href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700italic,900,700,900italic' rel='stylesheet' type='text/css'> -->
-  <script src="https://kit.fontawesome.com/f40904d23d.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="css/superfish.css">
-  <link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/cs-select.css">
-  <link rel="stylesheet" href="css/cs-skin-border.css">
-  <link rel="stylesheet" href="css/themify-icons.css">
-  <link rel="stylesheet" href="css/flaticon.css">
-  <link rel="stylesheet" href="css/icomoon.css">
-  <link rel="stylesheet" href="css/flexslider.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/mybtn_flot.css">
-  <script src="js/modernizr-2.6.2.min.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contacto - Hoteles PUNTO MX</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Website Hoteles PUNTO MX"/>
+    <meta name="keywords" content="Hoteles, CDMX, PUNTOMX, TURISTA"/>
+    <meta name="author" content="eknr"/>
+    <!------------------------------------------------->
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WJG6GSM9');</script>
+    <!-- End Google Tag Manager -->
+    <!------------------------------------------------->
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content=""/>
+    <meta property="og:image" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:site_name" content=""/>
+    <meta property="og:description" content=""/>
+    <meta name="twitter:title" content=""/>
+    <meta name="twitter:image" content=""/>
+    <meta name="twitter:url" content=""/>
+    <meta name="twitter:card" content=""/>
+    <link rel="shortcut icon" href="assets/logos/puntomx_ico.ico">
+    <!-- <link href='https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700italic,900,700,900italic' rel='stylesheet' type='text/css'> -->
+    <script src="https://kit.fontawesome.com/f40904d23d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/superfish.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+          integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/cs-select.css">
+    <link rel="stylesheet" href="css/cs-skin-border.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mybtn_flot.css">
+    <script src="js/modernizr-2.6.2.min.js"></script>
 </head>
 <body class="mybody">
 <!------ modals ------->
-<div class="modal fade" id="aboutUs" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header" style="background-color: var(--color-primario);">
-        <h5 class="modal-title fontWhite cursiveFont" id="">Hotel Punto MX - Acerca de Nosotros</h5>
-        <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-        </button>-->
-      </div>
-      <div class="modal-body fontHover">
-        <small>
-          Nos encontramos en el Centro Histórico, uno de los sitios más representativos de la CDMX, déjate consentir en PUNTO MX con una tendencia ART DECO que encierra modernidad y confort que te hará vivir la mejor experiencia hospitalaria.
-          <br>
-          Contamos con 60 lujosas y cómodas habitaciones; cada una de ellas con un toque especial.<br>
-          Ya sea que tu viaje sea familiar, de amigos o negocios, PUNTO MX es un lugar maravilloso para hacer de tu experiencia en México algo único.
-        </small>
-        <ul class="banner_well">
-          <li style="color: #0c5460!important;"><i class="fa-solid fa-drumstick-bite fontHover" style="color: #0c5460!important;"></i><small>Desayuno Buffete</small></li>
-          <li style="color: #0c5460!important;"><i class="fa-solid fa-bed fontHover" style="color: #0c5460!important;"></i><small>Upgrade gratis</small></li>
-          <li style="color: #0c5460!important;"><i class="fa-solid fa-hand-holding-dollar fontHover" style="color: #0c5460!important;"></i><small>Mejor precio</small></li>
-        </ul>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary btn-lg" data-dismiss="modal" style="padding: 5px 15px!important; border-radius: 20px;">Cerrar</button>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="modal fade" id="sucursalH" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header" style="background-color: var(--color-primario);">
-        <h5 class="modal-title fontWhite cursiveFont">Hotel Punto MX - Ubicación de la Sucursal</h5>
-        <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-        </button>-->
-      </div>
-      <div class="modal-body fontHover text-center">
-        <small>
-          Visítanos, no te arrepentirás.<br>
-          ¡Reserva con la tarifa más baja! <br>+52 (55) 5512 - 7064<br>
-          <i class="fa-solid fa-location-dot"></i> Uruguay 47 Col. Centro C.P. 06020 CDMX, MEX.
-        </small>
-        <div id="map2" class="fh5co-map" style="height: 600px; display: flex; justify-content: center; align-items: center; padding:0 20px;">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.579176855236!2d-99.13985438406046!3d19.430580286885526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff515d840f61%3A0x80e2a464c3755aa!2sHotel%20Punto%20Mx!5e0!3m2!1ses!2smx!4v1653328105577!5m2!1ses!2smx" width="700" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary btn-lg" data-dismiss="modal" style="padding: 5px 15px!important; border-radius: 20px;">Cerrar</button>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="modal fade" id="bolsaTrabajo" tabindex="-1" role="dialog" aria-labelledby="bolsaTrabajo_Modal" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header" style="background-color: var(--color-primario);">
-        <h5 class="modal-title fontWhite cursiveFont">Hotel Punto MX - Bolsa de Trabajo</h5>
-        <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-        </button>-->
-      </div>
-      <div class="modal-body fontHover">
-        <div class="container-fluid">
-          <div class="row text-center" style="margin-bottom: 15px!important;">
-            <small>
-              En <span class="fontHover">Punto MX</span> constantemente buscamos personas que quieran ser parte de nuestro equipo, por lo que en esta sección, podrás encontrar las últimas vacantes disponibles para laborar con nosotros.
-            </small>
-          </div>
-          <div class="row">
-            <div class="col-md-6">
-              <h5 class="fontHover cursiveFont" style="margin-bottom: 0; padding-bottom: 0;">Vacantes Disponibles</h5>
-              <ul class="list-unstyled" style="font-size: 1.5rem;">
-                <li>Auxiliar de Cocina</li>
-                <li>Cocinero</li>
-                <li>Lavaloza</li>
-                <li>Garrotero</li>
-                <li>Bell Boy (Bilingüe)</li>
-                <li>Camarista</li>
-              </ul>
+<div class="modal fade" id="aboutUs" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header" style="background-color: var(--color-primario);">
+                <h5 class="modal-title fontWhite cursiveFont" id="">Hotel Punto MX - Acerca de Nosotros</h5>
+                <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>-->
             </div>
-            <div class="col-md-6">
-              <form class="" id="contactForm2" style="min-width:100px;">
-                <ul class="list-unstyled">
-                  <li style="font-size: 1.5rem; color: #0c5460">
-                    <h5 class="cursiveFont fontHover" style="margin-bottom: 0;padding-bottom: 0;">Envía tus datos</h5>
-                  </li>
-                  <li style="font-size: 1.5rem; color: #0c5460">
-                    <input type="text" name="name" class="borde_r" placeholder="Nombre" required style="height: 25px; min-width: 30px!important;"/>
-                  </li>
-                  <li style="font-size: 1.5rem; color: #0c5460">
-                    <input type="email" name="email" placeholder="email@example.com" required style="height: 25px; min-width: 30px!important;" />
-                    <span class="form_hint">Formato "email@domino.com"</span>
-                  </li>
-                  <li style="font-size: 1.5rem; color: #0c5460">
-                    <textarea name="message" cols="40" rows="6" required style="height: 80px; width: 200px;" placeholder="Puesto requerido:"> </textarea>
-                  </li>
-                  <li style="font-size: 1.5rem; color: #0c5460">
-                    <input class="btn btn-primary btn-luxe-primary" type="button" value="Enviar" onclick="enviarEmail()" style="height: 40px; width: 90px; box-shadow: none; margin: auto;"/>
-                  </li>
+            <div class="modal-body fontHover">
+                <small>
+                    Nos encontramos en el Centro Histórico, uno de los sitios más representativos de la CDMX, déjate
+                    consentir en PUNTO MX con una tendencia ART DECO que encierra modernidad y confort que te hará vivir
+                    la mejor experiencia hospitalaria.
+                    <br>
+                    Contamos con 60 lujosas y cómodas habitaciones; cada una de ellas con un toque especial.<br>
+                    Ya sea que tu viaje sea familiar, de amigos o negocios, PUNTO MX es un lugar maravilloso para hacer
+                    de tu experiencia en México algo único.
+                </small>
+                <ul class="banner_well">
+                    <li style="color: #0c5460!important;"><i class="fa-solid fa-drumstick-bite fontHover"
+                                                             style="color: #0c5460!important;"></i><small>Desayuno
+                        Buffete</small></li>
+                    <li style="color: #0c5460!important;"><i class="fa-solid fa-bed fontHover"
+                                                             style="color: #0c5460!important;"></i><small>Upgrade
+                        gratis</small></li>
+                    <li style="color: #0c5460!important;"><i class="fa-solid fa-hand-holding-dollar fontHover"
+                                                             style="color: #0c5460!important;"></i><small>Mejor
+                        precio</small></li>
                 </ul>
-              </form>
             </div>
-          </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary btn-lg" data-dismiss="modal"
+                        style="padding: 5px 15px!important; border-radius: 20px;">Cerrar
+                </button>
+            </div>
         </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary btn-lg" data-dismiss="modal" style="padding: 5px 15px!important; border-radius: 20px;">Cerrar</button>
-      </div>
     </div>
-  </div>
 </div>
-<div class="modal fade" id="avisoPrivacidad" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header" style="background-color: var(--color-primario);">
-        <h5 class="modal-title fontWhite cursiveFont">Hotel Punto MX - Aviso de Privacidad</h5>
-      </div>
-      <div class="modal-body fontHover">
-        <small>
-          Estimado Cliente, A.T. RENTA S.A. de C.V.  (En adelante “Hotel  Punto MX”), cuyas oficinas se encuentran ubicadas en República de Uruguay No.47 Col. Centro, C.P. 06020 CDMX, México; respetamos su privacidad y por lo tanto nos comprometemos a proteger y mantener de manera confidencial, la información obtenida de su persona.<br>
-          Nos referimos a toda la información de personas físicas relacionadas con su Empresa y/o Persona (en adelante “Datos Personales”), que por cualquier causa se encuentre en posesión de Hotel Punto MX.<br>
-          Respecto a lo anterior, hacemos de su conocimiento que la información que Hotel Punto MX necesita, y que proviene en su mayoría de su Empresa y/o Persona, está orientada a la prestación del servicio(s) objeto de Hotel Punto MX, así como para brindarle una mejor atención y poder estar en cumplimiento de las leyes y políticas que rigen las funciones y actividades del hotel.<br>
-          En virtud de lo anterior, Hotel Punto MX podrá llegar a compartir los Datos Personales con las demás entidades subsidiarias, afiliadas y/o relacionadas al mismo, proveedores de servicio que Hotel Punto MX haya contratado y/o terceros que a juicio sea necesario para la realización de las actividades del negocio.<br>
-          Las partes mencionadas en el párrafo anterior, únicamente recibirán los Datos Personales que se requieran para la realización de sus actividades y sólo podrán utilizar los Datos Personales para ofrecer servicios a nombre de Hotel Punto MX y para cumplir con cualquier requisito legal aplicable.<br>
-          Adicionalmente a los casos antes referidos, Hotel Punto MX podrá revelar los Datos Personales:<br>
-          <ol style="list-style: upper-roman;  font-size: 1.5rem!important;">
-            <li>si alguna ley o proceso legal lo exigen,</li>
-            <li>ante las autoridades competentes o autoridades gubernamentales, previa solicitud de las mismas y/o</li>
-            <li>cuando consideremos que la revelación de los mismos es necesaria o apropiada para evitar daños físicos o pérdidas económicas.</li>
-          </ol>
-          Tanto por las prácticas de privacidad de Hotel Punto MX, como por lo establecido en las leyes vigentes aplicables, las bases de datos del hotel, están debidamente protegidas y resguardadas para evitar pérdidas, usos incorrectos o accesos no autorizados, publicaciones, modificaciones o destrucciones de los Datos Personales que nos han sido proporcionados; velando en todo momento la protección de Datos Personales, evitando daño, pérdida, alteración, destrucción, uso, acceso o tratamiento.<br>
-          Su Empresa debe hacerse responsable de hacerle llegar el presente Aviso, a las personas físicas relacionadas con la misma.<br>
-          Hotel Punto MX asume que:
-          <ul style="font-size: 1.5rem!important;">
-            <li>Su Empresa cumple con las obligaciones establecidas en la Ley Federal de Protección de Datos Personales en Posesión de los Particulares mediante políticas internas;</li>
-            <li>Que los Datos Personales proporcionados por su Empresa Yo Persona son pertinentes, claros, correctos y actualizados para los fines para los cuales fueron recabados y;</li>
-            <li>Que su Empresa se encuentra facultada para proporcionar a Hotel Punto MX</li>
-          </ul>
-          Las personas físicas relacionadas a su Empresa podrán en cualquier momento:<br>
-          Acceder a los Datos Personales que obren en poder de Hotel Punto MX<br>
-          <ul  style="font-size: 1.5rem!important;">
-            <li>Rectificarlos cuando sean inexactos o incompletos, inadecuados excesivos, siempre y cuando no resulte imposible o exija esfuerzos desproporcionados.</li>
-            <li>Oponerse al tratamiento de los Datos Personales por causa legítima, y</li>
-            <li>Cancelarlos, salvo cuando pudiese causar perjuicios a derechos o intereses legítimos de terceros o en los casos previstos por la legislación aplicable.</li>
-          </ul>
-          Las personas físicas relacionadas con su Empresa podrán ejercer los derechos mencionados en el párrafo anterior, mediante una petición directa a Hotel Punto MX a través del correo electrónico web@hotelespuntomx.com<br>
-          Las personas físicas de su Empresa, deberán proveer la siguiente información para ingresar la solicitud correspondiente:<br>
-          <ol  style="font-size: 1.5rem!important;">
-            <li>Nombre, domicilio y cualquier otro medio para contactarlo.</li>
-            <li>Los documentos que acrediten su identidad o la del representante legal.</li>
-            <li>Descripción de los Datos Personales respecto de los cuales desea ejercer algún derecho.</li>
-            <li>En caso de las solicitudes de rectificación, se deberá señalar que información de los Datos Personales desea corregir, modificar y/o actualizar.</li>
-          </ol>
-          En caso de que no desee consentir la transmisión de los Datos Personales, o en caso de dudas respecto al tratamiento de los Datos Personales, le agradeceremos que se ponga en contacto al correo electrónico web@hotelespuntomx.com de Hotel Punto MX, ubicado en República de Uruguay No.47 Col. Centro, C.P. 06020 CDMX, México
-        </small>
-
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary btn-lg" data-dismiss="modal" style="padding: 5px 15px!important; border-radius: 20px;">Cerrar</button>
-      </div>
+<div class="modal fade" id="sucursalH" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header" style="background-color: var(--color-primario);">
+                <h5 class="modal-title fontWhite cursiveFont">Hotel Punto MX - Ubicación de la Sucursal</h5>
+                <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>-->
+            </div>
+            <div class="modal-body fontHover text-center">
+                <small>
+                    Visítanos, no te arrepentirás.<br>
+                    ¡Reserva con la tarifa más baja! <br>+52 (55) 5512 - 7064<br>
+                    <i class="fa-solid fa-location-dot"></i> Uruguay 47 Col. Centro C.P. 06020 CDMX, MEX.
+                </small>
+                <div id="map2" class="fh5co-map"
+                     style="height: 600px; display: flex; justify-content: center; align-items: center; padding:0 20px;">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.579176855236!2d-99.13985438406046!3d19.430580286885526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff515d840f61%3A0x80e2a464c3755aa!2sHotel%20Punto%20Mx!5e0!3m2!1ses!2smx!4v1653328105577!5m2!1ses!2smx"
+                            width="700" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary btn-lg" data-dismiss="modal"
+                        style="padding: 5px 15px!important; border-radius: 20px;">Cerrar
+                </button>
+            </div>
+        </div>
     </div>
-  </div>
+</div>
+<div class="modal fade" id="bolsaTrabajo" tabindex="-1" role="dialog" aria-labelledby="bolsaTrabajo_Modal"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header" style="background-color: var(--color-primario);">
+                <h5 class="modal-title fontWhite cursiveFont">Hotel Punto MX - Bolsa de Trabajo</h5>
+                <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>-->
+            </div>
+            <div class="modal-body fontHover">
+                <div class="container-fluid">
+                    <div class="row text-center" style="margin-bottom: 15px!important;">
+                        <small>
+                            En <span class="fontHover">Punto MX</span> constantemente buscamos personas que quieran ser
+                            parte de nuestro equipo, por lo que en esta sección, podrás encontrar las últimas vacantes
+                            disponibles para laborar con nosotros.
+                        </small>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5 class="fontHover cursiveFont" style="margin-bottom: 0; padding-bottom: 0;">Vacantes
+                                Disponibles</h5>
+                            <ul class="list-unstyled" style="font-size: 1.5rem;">
+                                <li>Auxiliar de Cocina</li>
+                                <li>Cocinero</li>
+                                <li>Lavaloza</li>
+                                <li>Garrotero</li>
+                                <li>Bell Boy (Bilingüe)</li>
+                                <li>Camarista</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <form class="" id="contactForm2" style="min-width:100px;">
+                                <ul class="list-unstyled">
+                                    <li style="font-size: 1.5rem; color: #0c5460">
+                                        <h5 class="cursiveFont fontHover" style="margin-bottom: 0;padding-bottom: 0;">
+                                            Envía tus datos</h5>
+                                    </li>
+                                    <li style="font-size: 1.5rem; color: #0c5460">
+                                        <input type="text" name="name" class="borde_r" placeholder="Nombre" required
+                                               style="height: 25px; min-width: 30px!important;"/>
+                                    </li>
+                                    <li style="font-size: 1.5rem; color: #0c5460">
+                                        <input type="email" name="email" placeholder="email@example.com" required
+                                               style="height: 25px; min-width: 30px!important;"/>
+                                        <span class="form_hint">Formato "email@domino.com"</span>
+                                    </li>
+                                    <li style="font-size: 1.5rem; color: #0c5460">
+                                        <textarea name="message" cols="40" rows="6" required
+                                                  style="height: 80px; width: 200px;"
+                                                  placeholder="Puesto requerido:"> </textarea>
+                                    </li>
+                                    <li style="font-size: 1.5rem; color: #0c5460">
+                                        <input class="btn btn-primary btn-luxe-primary" type="button" value="Enviar"
+                                               onclick="enviarEmail()"
+                                               style="height: 40px; width: 90px; box-shadow: none; margin: auto;"/>
+                                    </li>
+                                </ul>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary btn-lg" data-dismiss="modal"
+                        style="padding: 5px 15px!important; border-radius: 20px;">Cerrar
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="avisoPrivacidad" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header" style="background-color: var(--color-primario);">
+                <h5 class="modal-title fontWhite cursiveFont">Hotel Punto MX - Aviso de Privacidad</h5>
+            </div>
+            <div class="modal-body fontHover">
+                <small>
+                    Estimado Cliente, A.T. RENTA S.A. de C.V. (En adelante “Hotel Punto MX”), cuyas oficinas se
+                    encuentran ubicadas en República de Uruguay No.47 Col. Centro, C.P. 06020 CDMX, México; respetamos
+                    su privacidad y por lo tanto nos comprometemos a proteger y mantener de manera confidencial, la
+                    información obtenida de su persona.<br>
+                    Nos referimos a toda la información de personas físicas relacionadas con su Empresa y/o Persona (en
+                    adelante “Datos Personales”), que por cualquier causa se encuentre en posesión de Hotel Punto
+                    MX.<br>
+                    Respecto a lo anterior, hacemos de su conocimiento que la información que Hotel Punto MX necesita, y
+                    que proviene en su mayoría de su Empresa y/o Persona, está orientada a la prestación del servicio(s)
+                    objeto de Hotel Punto MX, así como para brindarle una mejor atención y poder estar en cumplimiento
+                    de las leyes y políticas que rigen las funciones y actividades del hotel.<br>
+                    En virtud de lo anterior, Hotel Punto MX podrá llegar a compartir los Datos Personales con las demás
+                    entidades subsidiarias, afiliadas y/o relacionadas al mismo, proveedores de servicio que Hotel Punto
+                    MX haya contratado y/o terceros que a juicio sea necesario para la realización de las actividades
+                    del negocio.<br>
+                    Las partes mencionadas en el párrafo anterior, únicamente recibirán los Datos Personales que se
+                    requieran para la realización de sus actividades y sólo podrán utilizar los Datos Personales para
+                    ofrecer servicios a nombre de Hotel Punto MX y para cumplir con cualquier requisito legal aplicable.<br>
+                    Adicionalmente a los casos antes referidos, Hotel Punto MX podrá revelar los Datos Personales:<br>
+                    <ol style="list-style: upper-roman;  font-size: 1.5rem!important;">
+                        <li>si alguna ley o proceso legal lo exigen,</li>
+                        <li>ante las autoridades competentes o autoridades gubernamentales, previa solicitud de las
+                            mismas y/o
+                        </li>
+                        <li>cuando consideremos que la revelación de los mismos es necesaria o apropiada para evitar
+                            daños físicos o pérdidas económicas.
+                        </li>
+                    </ol>
+                    Tanto por las prácticas de privacidad de Hotel Punto MX, como por lo establecido en las leyes
+                    vigentes aplicables, las bases de datos del hotel, están debidamente protegidas y resguardadas para
+                    evitar pérdidas, usos incorrectos o accesos no autorizados, publicaciones, modificaciones o
+                    destrucciones de los Datos Personales que nos han sido proporcionados; velando en todo momento la
+                    protección de Datos Personales, evitando daño, pérdida, alteración, destrucción, uso, acceso o
+                    tratamiento.<br>
+                    Su Empresa debe hacerse responsable de hacerle llegar el presente Aviso, a las personas físicas
+                    relacionadas con la misma.<br>
+                    Hotel Punto MX asume que:
+                    <ul style="font-size: 1.5rem!important;">
+                        <li>Su Empresa cumple con las obligaciones establecidas en la Ley Federal de Protección de Datos
+                            Personales en Posesión de los Particulares mediante políticas internas;
+                        </li>
+                        <li>Que los Datos Personales proporcionados por su Empresa Yo Persona son pertinentes, claros,
+                            correctos y actualizados para los fines para los cuales fueron recabados y;
+                        </li>
+                        <li>Que su Empresa se encuentra facultada para proporcionar a Hotel Punto MX</li>
+                    </ul>
+                    Las personas físicas relacionadas a su Empresa podrán en cualquier momento:<br>
+                    Acceder a los Datos Personales que obren en poder de Hotel Punto MX<br>
+                    <ul style="font-size: 1.5rem!important;">
+                        <li>Rectificarlos cuando sean inexactos o incompletos, inadecuados excesivos, siempre y cuando
+                            no resulte imposible o exija esfuerzos desproporcionados.
+                        </li>
+                        <li>Oponerse al tratamiento de los Datos Personales por causa legítima, y</li>
+                        <li>Cancelarlos, salvo cuando pudiese causar perjuicios a derechos o intereses legítimos de
+                            terceros o en los casos previstos por la legislación aplicable.
+                        </li>
+                    </ul>
+                    Las personas físicas relacionadas con su Empresa podrán ejercer los derechos mencionados en el
+                    párrafo anterior, mediante una petición directa a Hotel Punto MX a través del correo electrónico
+                    web@hotelespuntomx.com<br>
+                    Las personas físicas de su Empresa, deberán proveer la siguiente información para ingresar la
+                    solicitud correspondiente:<br>
+                    <ol style="font-size: 1.5rem!important;">
+                        <li>Nombre, domicilio y cualquier otro medio para contactarlo.</li>
+                        <li>Los documentos que acrediten su identidad o la del representante legal.</li>
+                        <li>Descripción de los Datos Personales respecto de los cuales desea ejercer algún derecho.</li>
+                        <li>En caso de las solicitudes de rectificación, se deberá señalar que información de los Datos
+                            Personales desea corregir, modificar y/o actualizar.
+                        </li>
+                    </ol>
+                    En caso de que no desee consentir la transmisión de los Datos Personales, o en caso de dudas
+                    respecto al tratamiento de los Datos Personales, le agradeceremos que se ponga en contacto al correo
+                    electrónico web@hotelespuntomx.com de Hotel Punto MX, ubicado en República de Uruguay No.47 Col.
+                    Centro, C.P. 06020 CDMX, México
+                </small>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary btn-lg" data-dismiss="modal"
+                        style="padding: 5px 15px!important; border-radius: 20px;">Cerrar
+                </button>
+            </div>
+        </div>
+    </div>
 </div>
 <!------------>
 <div id="fh5co-wrapper">
-  <div id="fh5co-page">
-    <div id="fh5co-header">
-      <header id="fh5co-header-section">
+    <div id="fh5co-page">
+        <div id="fh5co-header">
+            <header id="fh5co-header-section">
+                <div class="container">
+                    <div class="nav-header">
+                        <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
+                        <h1 id="fh5co-logo"><a href="index.html"><img src="assets/logos/puntomx_ico.ico"
+                                                                      alt="Logo de Hoteles Punto MX" height="80px"
+                                                                      srcset=""></a></h1>
+                        <nav id="fh5co-menu-wrap" role="navigation">
+                            <ul class="sf-menu" id="fh5co-primary-menu">
+                                <li><a class="" href="index.html">Inicio</a></li>
+                                <li>
+                                    <a href="#" class="fh5co-sub-ddown">Hotel</a>
+                                    <ul class="fh5co-sub-menu">
+                                        <li><a href="rooms.html">Habitaciones</a></li>
+                                        <li><a href="services.html">Servicios & Amenidades</a></li>
+                                        <li><a href="restaurant.html">Restaurante MX</a></li>
+                                        <li><a href="cafe.html">Café MX</a></li>
+                                        <li><a href="roomservice.html">Room Service</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="cdmx.html">Conoce la CDMX</a></li>
+                                <li><a href="tours.html">Tours</a></li>
+                                <!--<li><a href="blog.html">Blog</a></li>-->
+                                <li><a href="#" class="active">Contacto</a></li>
+                                <li><a href="./ng/contact.html" target="_self"><i
+                                        class="fa-solid fa-flag-usa"></i>Eng</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <!-- end:fh5co-header -->
+        <div class="fh5co-parallax"
+             style="background: linear-gradient( rgba(0, 0, 0, 0.4) 100%, rgba(0, 0, 0, 0.2)100%),url(./assets/webp/AMENIDADES.jpeg); background-size: contain, cover; background-position: 0 bottom,0 bottom!important; background-repeat: repeat,no-repeat;"
+             data-stellar-background-ratio="0.5">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center fh5co-table">
+                        <div class="fh5co-intro fh5co-table-cell">
+                            <p>¿Tienes alguna duda?</p>
+                            <h1 class="text-center">Contáctanos</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="container">
-          <div class="nav-header">
-            <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
-            <h1 id="fh5co-logo"><a href="index.html"><img src="assets/logos/puntomx_ico.ico" alt="Logo de Hoteles Punto MX" height="80px" srcset=""></a></h1>
-            <nav id="fh5co-menu-wrap" role="navigation">
-              <ul class="sf-menu" id="fh5co-primary-menu">
-                <li><a class="" href="index.html">Inicio</a></li>
-                <li>
-                  <a href="#" class="fh5co-sub-ddown">Hotel</a>
-                  <ul class="fh5co-sub-menu">
-                    <li><a href="rooms.html">Habitaciones</a></li>
-                    <li><a href="services.html">Servicios & Amenidades</a></li>
-                    <li><a href="restaurant.html">Restaurante MX</a></li>
-                    <li><a href="cafe.html">Café MX</a></li>
-                    <li><a href="roomservice.html">Room Service</a></li>
-                  </ul>
-                </li>
-                <li><a href="cdmx.html">Conoce la CDMX</a></li>
-                <li><a href="tours.html">Tours</a></li>
-                <!--<li><a href="blog.html">Blog</a></li>-->
-                <li><a href="#" class="active">Contacto</a></li>
-                <li><a href="./ng/contact.html" target="_self"><i class="fa-solid fa-flag-usa"></i>Eng</a></li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </header>
-    </div>
-    <!-- end:fh5co-header -->
-    <div class="fh5co-parallax" style="background: linear-gradient( rgba(0, 0, 0, 0.4) 100%, rgba(0, 0, 0, 0.2)100%),url(./assets/webp/AMENIDADES.jpeg); background-size: contain, cover; background-position: 0 bottom,0 bottom!important; background-repeat: repeat,no-repeat;" data-stellar-background-ratio="0.5">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center fh5co-table">
-            <div class="fh5co-intro fh5co-table-cell">
-              <p>¿Tienes alguna duda?</p>
-              <h1 class="text-center">Contáctanos</h1>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <a href="https://www.beds24.com/booking.php?propid=36868&referer=BookingLink" class="mybtn-flotante text-rsv">Reserva aquí</a>
-        <a href="https://api.whatsapp.com/send/?phone=5618887875&text&app_absent=0" target="_blank" class="mywap-flotante text-rsv"><i class="fa-brands fa-whatsapp"></i></a>
-      </div>
-    </div>
-    <!----------------------------------------------------->
-    <div id="fh5co-counter-section" class="fh5co-counters" style="background-color: var(--color-primario); padding: 0;">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 text-center myc" >
-            <img src="./assets/logos/puntomx_ico.ico" alt="Logo en blanco del Restaurante MX" style="max-width: 90%;">
-            <p class="fh5co-counter-label" style="color: var(--white); text-transform: none; font-size: 1.5rem; letter-spacing: normal;">¡Reserva con la tarifa más baja! <br>+52 (55) 5512 - 7064</p>
-            <p class="fh5co-counter-label" style="color: var(--white); text-transform: none; font-size: 1.5rem; letter-spacing: normal;text-align: center;"><i class="fa-solid fa-location-dot"></i> Uruguay 47 Col. Centro C.P. 06020 CDMX, MEX.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!----------------------------------------------------->
-    <!------------------------------------------->
-    <div class="container pt-lg-5">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="section-title text-center mb-0 pt-sm-0 pt-lg-3" style="padding-top: 1em!important;">
-            <h2>Preguntas Frecuentes</h2>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-2 col-md-2"></div>
-        <div class="col-lg-8 col-md-8 col-sm-12">
-          <div class="accordion" id="accordionExample">
-            <!---FAQ1--->
-            <div class="card">
-              <div class="card-header" id="faq_h1">
-                <h2 class="mb-0">
-                  <button class="btn btn-link btnHover" type="button" data-toggle="collapse" data-target="#faq_b1" aria-expanded="true" aria-controls="faq_b1">
-                    1.	¿Cuentan con estacionamiento?
-                  </button>
-                </h2>
-              </div>
-              <div id="faq_b1" class="collapse show" aria-labelledby="faq_h1" data-parent="#accordionExample">
-                <div class="card-body">
-                  El hotel no cuenta con estacionamiento en las instalaciones, pero tenemos un convenio con el estacionamiento DePrisa ubicado en Isabel la Católica esquina con 16 de septiembre y tiene un costo de $300.00 MXN por 24 horas.
-                </div>
-              </div>
-            </div>
-            <!---FAQ2--->
-            <div class="card">
-              <div class="card-header" id="faq_h2">
-                <h2 class="mb-0">
-                  <button class="btn btn-link btn-block text-left btnHover collapsed" type="button" data-toggle="collapse" data-target="#faq_b2" aria-expanded="true" aria-controls="faq_b2">
-                    2.	¿Qué instalaciones ofrecen?
-                  </button>
-                </h2>
-              </div>
-              <div id="faq_b2" class="collapse" aria-labelledby="faq_h2" data-parent="#accordionExample" aria-expanded="false">
-                <div class="card-body">
-                  Contamos con restaurante, cafetería, room service, terraza y gimnasio.
-                </div>
-              </div>
-            </div>
-            <!---FAQ3--->
-            <div class="card">
-              <div class="card-header" id="faq_h3">
-                <h2 class="mb-0">
-                  <button class="btn btn-link btn-block text-left btnHover collapsed" type="button" data-toggle="collapse" data-target="#faq_b3" aria-expanded="true" aria-controls="faq_b3">
-                    3.	¿Qué habitaciones cuentan con vista?
-                  </button>
-                </h2>
-              </div>
-              <div id="faq_b3" class="collapse" aria-labelledby="faq_h3" data-parent="#accordionExample">
-                <div class="card-body">
-                  Solo nuestras suites, suite con vista, suite con tina o suite con jacuzzi.
-                </div>
-              </div>
-            </div>
-            <!---FAQ4--->
-            <div class="card">
-              <div class="card-header" id="faq_h4">
-                <h2 class="mb-0">
-                  <button class="btn btn-link btn-block text-left btnHover" type="button" data-toggle="collapse" data-target="#faq_b4" aria-expanded="true" aria-controls="faq_b4">
-                    4.	¿Qué tipo de paquetes ofrecen para decorar la habitación?
-                  </button>
-                </h2>
-              </div>
-              <div id="faq_b4" class="collapse" aria-labelledby="faq_h4" data-parent="#accordionExample">
-                <div class="card-body">
-                  El precio del paquete es independiente al precio de la habitación<br>
-                  <span class="cursiveFont fontPrimary">Paquete</span> <span class="fontHover">LUNAMIELERO</span>
-                  <ul style="font-size: 1.5rem; margin-bottom: 0;">
-                    <li>Decoración con pétalos de rosa en la habitación.</li>
-                    <li>Botella de vino espumoso.</li>
-                    <li>Decoración con velas en la habitación.</li>
-                    <li>Fresas con chocolate.</li>
-                    <li>Arreglo floral.</li>
-                  </ul>
-                  <small class="fontHover mt-0 pt-0">TOTAL: $1,800.00MXN </small><br>
-                  <span class="cursiveFont fontPrimary">Paquete</span> <span class="fontHover">ANIVERSARIO</span>
-                  <ul style="font-size: 1.5rem; margin-bottom: 0;">
-                    <li>Globo metálico con el número de celebración.</li>
-                    <li>Botella de vino espumoso.</li>
-                    <li>Confeti metálico para decorar.</li>
-                    <li>Rebanada de cheesecake.</li>
-                  </ul>
-                  <small class="fontHover mt-0 pt-0">TOTAL: $1,600.00MXN </small><br>
-                  <span class="cursiveFont fontPrimary">Paquete</span> <span class="fontHover">CUMPLEAÑOS</span>
-                  <ul style="font-size: 1.5rem; margin-bottom: 0;">
-                    <li>Globos metálicos con la edad del cumpleañero.</li>
-                    <li>Decoración con globos en la habitación.</li>
-                    <li>Rebanada de cheesecake.</li>
-                  </ul>
-                  <small class="fontHover mt-0 pt-0">TOTAL: $1,300.00MXN </small><br>
-                  <small class="" style="color: #000;"><span class="fontHover">Nota:</span> Para poder reservar algún paquete es necesario que se proporcione una tarjeta de crédito ya que el pago es por adelantado o bien realizar una transferencia tres días antes de su llegada</small>
-                </div>
-              </div>
-            </div>
-            <!---FAQ5--->
-            <div class="card">
-              <div class="card-header" id="faq_h5">
-                <h2 class="mb-0">
-                  <button class="btn btn-link btn-block text-left btnHover" type="button" data-toggle="collapse" data-target="#faq_b5" aria-expanded="true" aria-controls="faq_b5">
-                    5.	¿Que necesito para reservar?
-                  </button>
-                </h2>
-              </div>
-              <div id="faq_b5" class="collapse" aria-labelledby="faq_h5" data-parent="#accordionExample">
-                <div class="card-body">
-                  <ul style="font-size: 1.5rem; margin-bottom: 0;">
-                    <li>Nombre</li>
-                    <li>Correo electrónico</li>
-                    <li>Número telefónico</li>
-                    <li>Tarjeta de crédito que este a nombre del titular de la reserva (16 dígitos y fecha de vencimiento)</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!---FAQ6--->
-            <div class="card">
-              <div class="card-header" id="faq_h6">
-                <h2 class="mb-0">
-                  <button class="btn btn-link btn-block text-left btnHover" type="button" data-toggle="collapse" data-target="#faq_b6" aria-expanded="true" aria-controls="faq_b6">
-                    6.	¿Cuál es la dirección del hotel?
-                  </button>
-                </h2>
-              </div>
-              <div id="faq_b6" class="collapse" aria-labelledby="faq_h6" data-parent="#accordionExample">
-                <div class="card-body">
-                  Calle de Republica de Uruguay #47 col. Centro.
-                </div>
-              </div>
-            </div>
-            <!---FAQ7--->
-            <div class="card">
-              <div class="card-header" id="faq_h7">
-                <h2 class="mb-0">
-                  <button class="btn btn-link btn-block text-left btnHover" type="button" data-toggle="collapse" data-target="#faq_b7" aria-expanded="true" aria-controls="faq_b7">
-                    7.	¿Cuentan con servicio de pick up?
-                  </button>
-                </h2>
-              </div>
-              <div id="faq_b7" class="collapse" aria-labelledby="faq_h7" data-parent="#accordionExample">
-                <div class="card-body">
-                  Si, se tiene que reservar un día antes de su llegada, el costo para dos personas es de $600.00MXN, aeropuerto – hotel.
-                </div>
-              </div>
-            </div>
-            <!---FAQ8--->
-            <div class="card">
-              <div class="card-header" id="faq_h8">
-                <h2 class="mb-0">
-                  <button class="btn btn-link btn-block text-left btnHover" type="button" data-toggle="collapse" data-target="#faq_b8" aria-expanded="true" aria-controls="faq_b8">
-                    8.	¿Aceptan mascotas?
-                  </button>
-                </h2>
-              </div>
-              <div id="faq_b8" class="collapse" aria-labelledby="faq_h8" data-parent="#accordionExample">
-                <div class="card-body">
-                  Si, tiene un cargo extra de $300.00MXN por noche.<br>
-                  Si son de servicio no tiene costo alguno, pero es necesario entregar los documentos donde validen que es de servicio.<br>
-                  Puede alojarse con su mascota solo en las siguientes categorías: Deluxe dos camas matrimoniales, Junior suite cama king size y Suite con vista.
-                </div>
-              </div>
-            </div>
-            <!---FAQ9--->
-            <div class="card">
-              <div class="card-header" id="faq_h9">
-                <h2 class="mb-0">
-                  <button class="btn btn-link btn-block text-left btnHover" type="button" data-toggle="collapse" data-target="#faq_b9" aria-expanded="true" aria-controls="faq_b9">
-                    9.	¿Cuál es la hora del check in y del check out?
-                  </button>
-                </h2>
-              </div>
-              <div id="faq_b9" class="collapse" aria-labelledby="faq_h9" data-parent="#accordionExample">
-                <div class="card-body">
-                  El <span class="fontHover"><i>check in</i></span> es a partir de las 3:00pm y el <span
-                        class="fontHover"><i>check out</i></span> es a la 1:00pm.
-                </div>
-              </div>
-            </div>
-            <!---FAQ10--->
-            <div class="card">
-              <div class="card-header" id="faq_h10">
-                <h2 class="mb-0">
-                  <button class="btn btn-link btn-block text-left btnHover" type="button" data-toggle="collapse" data-target="#faq_b10" aria-expanded="true" aria-controls="faq_b10">
-                    10.	¿Cuál es el horario del desayuno?
-                  </button>
-                </h2>
-              </div>
-              <div id="faq_b10" class="collapse" aria-labelledby="faq_h10" data-parent="#accordionExample">
-                <div class="card-body">
-                  De lunes a domingo de 7:00am a 12:00pm.
-                </div>
-              </div>
-            </div>
-            <!---FAQ11--->
-            <div class="card">
-              <div class="card-header" id="faq_h11">
-                <h2 class="mb-0">
-                  <button class="btn btn-link btn-block text-left btnHover" type="button" data-toggle="collapse" data-target="#faq_b11" aria-expanded="true" aria-controls="faq_b11">
-                    11.	¿Cuentan con cunas?
-                  </button>
-                </h2>
-              </div>
-              <div id="faq_b11" class="collapse" aria-labelledby="faq_h11" data-parent="#accordionExample">
-                <div class="card-body">
-                  Si, solo es posible colocarlas en nuestras habitaciones de dos camas, suites con tina, suite con vista y nuestra master suite.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-2 col-md-2"></div>
-      </div>
-    </div>
-    <!------------------------------------------->
-    <div id="fh5co-contact-section" style=" display:flex; flex-direction: column-reverse; padding-top: 1.5rem!important; padding-bottom: 0.5rem!important;">
-      <div class="row">
-        <div class="col-md-6">
-          <form class="contact_form" id="contactForm">
-            <ul>
-              <li>
-                <h2 class="cursiveFont fontHover">Déjanos un mensaje:</h2>
-                <!--<span class="required_notification">* Denotes Required Field</span>-->
-              </li>
-              <li>
-                <label for="from_name" class="cursiveFont">Nombre:</label>
-                <input type="text" name="name" class="borde_r" placeholder="Nombre" id="from_name" required />
-                <!--<span class="fa valid-icon"></span>-->
-              </li>
-              <li>
-                <label for="from_email" class="cursiveFont">Email:</label>
-                <input type="email" name="email" placeholder="email@example.com" id="from_email" required />
-                <!--<span class="fa valid-icon"></span>-->
-                <span class="form_hint">Formato "email@domino.com"</span>
-              </li>
-              <li>
-                <label for="from_message" class="cursiveFont">Mensaje:</label>
-                <textarea name="message" cols="40" rows="6" required id="from_message"></textarea>
-                <!--<span class="fa valid-icon"></span>-->
-                <br>
-                <span id="response-mail" class="fontHover cursiveFont"> </span>
-              </li>
-              <li>
-                <input class="btn btn-primary btn-luxe-primary" type="button" value="Enviar" onclick="enviarEmail()" style="height: 40px; width: 90px; box-shadow: none; margin: auto;"/>
-              </li>
-            </ul>
-          </form>
-
-        </div>
-        <div class="col-md-6">
-          <!--<div id="map" class="fh5co-map"></div>-->
-          <div id="map1" class="fh5co-map" style="height: 600px; display: flex; justify-content: center; align-items: center; padding:0 20px;">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.579176855236!2d-99.13985438406046!3d19.430580286885526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff515d840f61%3A0x80e2a464c3755aa!2sHotel%20Punto%20Mx!5e0!3m2!1ses!2smx!4v1653328105577!5m2!1ses!2smx" width="700" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-        </div>
-
-      </div>
-    </div>
-    <footer id="footer" class="fh5co-bg-color" style="text-align: center;">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3">
-            <div class="copyright">
-              <small class="cursiveFont fontHover">El punto más cómodo de México.</small>
-              <p><small>&copy; Hotel Punto MX 2022<br> Todos los derechos reservados. </small> <br>
-              </p>
-            </div>
-          </div>
-          <div class="col-md-6">
             <div class="row">
-              <div class="col-md-6">
-                <ul class="link">
-                  <li><a href="#" data-toggle="modal" data-target="#aboutUs">Acerca de Nosotros</a></li>
-                  <li><a href="#" data-toggle="modal" data-target="#sucursalH">Sucursal</a></li>
-                  <li><a href="#" data-toggle="modal" data-target="#bolsaTrabajo">Bolsa de Trabajo</a></li>
-                  <li><a href="#" data-toggle="modal" data-target="#avisoPrivacidad">Aviso de Privacidad</a></li>
-                </ul>
-              </div>
-              <div class="col-md-6">
-                <h3>Comodidades</h3>
-                <ul class="link">
-                  <li><a href="restaurant.html">Resturant MX</a></li>
-                  <li><a href="cafe.html">Café MX</a></li>
-                  <li><a href="index.html#parking-tab">Estacionamiento</a></li>
-                  <li><a href="index.html#pet-tab">Pet Friendly</a></li>
-                </ul>
-              </div>
+                <a href="https://www.beds24.com/booking.php?propid=36868&referer=BookingLink"
+                   class="mybtn-flotante text-rsv">Reserva aquí</a>
+                <a href="https://api.whatsapp.com/send/?phone=5618887875&text&app_absent=0" target="_blank"
+                   class="mywap-flotante text-rsv"><i class="fa-brands fa-whatsapp"></i></a>
             </div>
-          </div>
-          <div class="col-md-3 m-0 row justify-content-center">
-            <ul class="social-icons">
-              <li>
-                <a class="circle_element" href="https://twitter.com/hotel_puntomx?lang=es" target="_blank"><i class="fa-brands fa-twitter" style="color: #000;"></i></a>
-                <a class="circle_element" href="https://www.facebook.com/HotelPuntoMX/" target="_blank"><i class="fa-brands fa-facebook" style="color: #000;"></i></a>
-                <a class="circle_element" href="https://www.instagram.com/hotelpuntomx/" target="_blank"><i class="fa-brands fa-instagram" style="color: #000;"></i></a>
-                <!--<a href="https://www.tripadvisor.com.mx/Hotel_Review-g150800-d12696075-Reviews-Hotel_Punto_MX-Mexico_City_Central_Mexico_and_Gulf_Coast.html" target="_blank"><span class="footer_esp_ta">--</span></a>-->
-                <a class="circle_element" href="https://www.tripadvisor.com.mx/Hotel_Review-g150800-d12696075-Reviews-Hotel_Punto_MX-Mexico_City_Central_Mexico_and_Gulf_Coast.html" target="_blank"><img src="./assets/logos/tripadvisor_l.png"></a>
-              </li>
-            </ul>
-            <div id="TA_cdswritereviewlg536" class="TA_cdswritereviewlg" style="display: flex; justify-content: center;">
-              <ul id="Ea8wnx2" class="TA_links JZShfshezv">
-                <li id="XE5FiGTI" class="ozAAbpJR">
-                  <a target="_blank" href="https://www.tripadvisor.es/Hotel_Review-g150800-d12696075-Reviews-Hotel_Punto_MX-Mexico_City_Central_Mexico_and_Gulf_Coast.html">
-                    <img src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_lockup_horizontal_secondary_registered.svg" alt="TripAdvisor"/>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <script async src="https://www.jscache.com/wejs?wtype=cdswritereviewlg&amp;uniq=536&amp;locationId=12696075&amp;lang=es&amp;lang=es&amp;display_version=2" data-loadtrk onload="this.loadtrk=true"></script>
-          </div>
         </div>
-      </div>
-    </footer>
-  </div>
+        <!----------------------------------------------------->
+        <div id="fh5co-counter-section" class="fh5co-counters"
+             style="background-color: var(--color-primario); padding: 0;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center myc">
+                        <img src="./assets/logos/puntomx_ico.ico" alt="Logo en blanco del Restaurante MX"
+                             style="max-width: 90%;">
+                        <p class="fh5co-counter-label"
+                           style="color: var(--white); text-transform: none; font-size: 1.5rem; letter-spacing: normal;">
+                            ¡Reserva con la tarifa más baja! <br>+52 (55) 5512 - 7064</p>
+                        <p class="fh5co-counter-label"
+                           style="color: var(--white); text-transform: none; font-size: 1.5rem; letter-spacing: normal;text-align: center;">
+                            <i class="fa-solid fa-location-dot"></i> Uruguay 47 Col. Centro C.P. 06020 CDMX, MEX.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!----------------------------------------------------->
+        <!------------------------------------------->
+        <div class="container pt-lg-5">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-title text-center mb-0 pt-sm-0 pt-lg-3" style="padding-top: 1em!important;">
+                        <h2>Preguntas Frecuentes</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2 col-md-2"></div>
+                <div class="col-lg-8 col-md-8 col-sm-12">
+                    <div class="accordion" id="accordionExample">
+                        <!---FAQ1--->
+                        <div class="card">
+                            <div class="card-header" id="faq_h1">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btnHover" type="button" data-toggle="collapse"
+                                            data-target="#faq_b1" aria-expanded="true" aria-controls="faq_b1">
+                                        1. ¿Cuentan con estacionamiento?
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="faq_b1" class="collapse show" aria-labelledby="faq_h1"
+                                 data-parent="#accordionExample">
+                                <div class="card-body">
+                                    El hotel no cuenta con estacionamiento en las instalaciones, pero tenemos un
+                                    convenio con el estacionamiento DePrisa ubicado en Isabel la Católica esquina con 16
+                                    de septiembre y tiene un costo de $300.00 MXN por 24 horas.
+                                </div>
+                            </div>
+                        </div>
+                        <!---FAQ2--->
+                        <div class="card">
+                            <div class="card-header" id="faq_h2">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left btnHover collapsed" type="button"
+                                            data-toggle="collapse" data-target="#faq_b2" aria-expanded="true"
+                                            aria-controls="faq_b2">
+                                        2. ¿Qué instalaciones ofrecen?
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="faq_b2" class="collapse" aria-labelledby="faq_h2" data-parent="#accordionExample"
+                                 aria-expanded="false">
+                                <div class="card-body">
+                                    Contamos con restaurante, cafetería, room service, terraza y gimnasio.
+                                </div>
+                            </div>
+                        </div>
+                        <!---FAQ3--->
+                        <div class="card">
+                            <div class="card-header" id="faq_h3">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left btnHover collapsed" type="button"
+                                            data-toggle="collapse" data-target="#faq_b3" aria-expanded="true"
+                                            aria-controls="faq_b3">
+                                        3. ¿Qué habitaciones cuentan con vista?
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="faq_b3" class="collapse" aria-labelledby="faq_h3" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Solo nuestras suites, suite con vista, suite con tina o suite con jacuzzi.
+                                </div>
+                            </div>
+                        </div>
+                        <!---FAQ4--->
+                        <div class="card">
+                            <div class="card-header" id="faq_h4">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left btnHover" type="button"
+                                            data-toggle="collapse" data-target="#faq_b4" aria-expanded="true"
+                                            aria-controls="faq_b4">
+                                        4. ¿Qué tipo de paquetes ofrecen para decorar la habitación?
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="faq_b4" class="collapse" aria-labelledby="faq_h4" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    El precio del paquete es independiente al precio de la habitación<br>
+                                    <span class="cursiveFont fontPrimary">Paquete</span> <span class="fontHover">LUNAMIELERO</span>
+                                    <ul style="font-size: 1.5rem; margin-bottom: 0;">
+                                        <li>Decoración con pétalos de rosa en la habitación.</li>
+                                        <li>Botella de vino espumoso.</li>
+                                        <li>Decoración con velas en la habitación.</li>
+                                        <li>Fresas con chocolate.</li>
+                                        <li>Arreglo floral.</li>
+                                    </ul>
+                                    <small class="fontHover mt-0 pt-0">TOTAL: $1,800.00MXN </small><br>
+                                    <span class="cursiveFont fontPrimary">Paquete</span> <span class="fontHover">ANIVERSARIO</span>
+                                    <ul style="font-size: 1.5rem; margin-bottom: 0;">
+                                        <li>Globo metálico con el número de celebración.</li>
+                                        <li>Botella de vino espumoso.</li>
+                                        <li>Confeti metálico para decorar.</li>
+                                        <li>Rebanada de cheesecake.</li>
+                                    </ul>
+                                    <small class="fontHover mt-0 pt-0">TOTAL: $1,600.00MXN </small><br>
+                                    <span class="cursiveFont fontPrimary">Paquete</span> <span class="fontHover">CUMPLEAÑOS</span>
+                                    <ul style="font-size: 1.5rem; margin-bottom: 0;">
+                                        <li>Globos metálicos con la edad del cumpleañero.</li>
+                                        <li>Decoración con globos en la habitación.</li>
+                                        <li>Rebanada de cheesecake.</li>
+                                    </ul>
+                                    <small class="fontHover mt-0 pt-0">TOTAL: $1,300.00MXN </small><br>
+                                    <small class="" style="color: #000;"><span class="fontHover">Nota:</span> Para poder
+                                        reservar algún paquete es necesario que se proporcione una tarjeta de crédito ya
+                                        que el pago es por adelantado o bien realizar una transferencia tres días antes
+                                        de su llegada</small>
+                                </div>
+                            </div>
+                        </div>
+                        <!---FAQ5--->
+                        <div class="card">
+                            <div class="card-header" id="faq_h5">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left btnHover" type="button"
+                                            data-toggle="collapse" data-target="#faq_b5" aria-expanded="true"
+                                            aria-controls="faq_b5">
+                                        5. ¿Que necesito para reservar?
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="faq_b5" class="collapse" aria-labelledby="faq_h5" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    <ul style="font-size: 1.5rem; margin-bottom: 0;">
+                                        <li>Nombre</li>
+                                        <li>Correo electrónico</li>
+                                        <li>Número telefónico</li>
+                                        <li>Tarjeta de crédito que este a nombre del titular de la reserva (16 dígitos y
+                                            fecha de vencimiento)
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!---FAQ6--->
+                        <div class="card">
+                            <div class="card-header" id="faq_h6">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left btnHover" type="button"
+                                            data-toggle="collapse" data-target="#faq_b6" aria-expanded="true"
+                                            aria-controls="faq_b6">
+                                        6. ¿Cuál es la dirección del hotel?
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="faq_b6" class="collapse" aria-labelledby="faq_h6" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Calle de Republica de Uruguay #47 col. Centro.
+                                </div>
+                            </div>
+                        </div>
+                        <!---FAQ7--->
+                        <div class="card">
+                            <div class="card-header" id="faq_h7">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left btnHover" type="button"
+                                            data-toggle="collapse" data-target="#faq_b7" aria-expanded="true"
+                                            aria-controls="faq_b7">
+                                        7. ¿Cuentan con servicio de pick up?
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="faq_b7" class="collapse" aria-labelledby="faq_h7" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Si, se tiene que reservar un día antes de su llegada, el costo para dos personas es
+                                    de $600.00MXN, aeropuerto – hotel.
+                                </div>
+                            </div>
+                        </div>
+                        <!---FAQ8--->
+                        <div class="card">
+                            <div class="card-header" id="faq_h8">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left btnHover" type="button"
+                                            data-toggle="collapse" data-target="#faq_b8" aria-expanded="true"
+                                            aria-controls="faq_b8">
+                                        8. ¿Aceptan mascotas?
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="faq_b8" class="collapse" aria-labelledby="faq_h8" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Si, tiene un cargo extra de $300.00MXN por noche.<br>
+                                    Si son de servicio no tiene costo alguno, pero es necesario entregar los documentos
+                                    donde validen que es de servicio.<br>
+                                    Puede alojarse con su mascota solo en las siguientes categorías: Deluxe dos camas
+                                    matrimoniales, Junior suite cama king size y Suite con vista.
+                                </div>
+                            </div>
+                        </div>
+                        <!---FAQ9--->
+                        <div class="card">
+                            <div class="card-header" id="faq_h9">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left btnHover" type="button"
+                                            data-toggle="collapse" data-target="#faq_b9" aria-expanded="true"
+                                            aria-controls="faq_b9">
+                                        9. ¿Cuál es la hora del check in y del check out?
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="faq_b9" class="collapse" aria-labelledby="faq_h9" data-parent="#accordionExample">
+                                <div class="card-body">
+                                    El <span class="fontHover"><i>check in</i></span> es a partir de las 3:00pm y el
+                                    <span
+                                            class="fontHover"><i>check out</i></span> es a la 1:00pm.
+                                </div>
+                            </div>
+                        </div>
+                        <!---FAQ10--->
+                        <div class="card">
+                            <div class="card-header" id="faq_h10">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left btnHover" type="button"
+                                            data-toggle="collapse" data-target="#faq_b10" aria-expanded="true"
+                                            aria-controls="faq_b10">
+                                        10. ¿Cuál es el horario del desayuno?
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="faq_b10" class="collapse" aria-labelledby="faq_h10"
+                                 data-parent="#accordionExample">
+                                <div class="card-body">
+                                    De lunes a domingo de 7:00am a 12:00pm.
+                                </div>
+                            </div>
+                        </div>
+                        <!---FAQ11--->
+                        <div class="card">
+                            <div class="card-header" id="faq_h11">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-left btnHover" type="button"
+                                            data-toggle="collapse" data-target="#faq_b11" aria-expanded="true"
+                                            aria-controls="faq_b11">
+                                        11. ¿Cuentan con cunas?
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="faq_b11" class="collapse" aria-labelledby="faq_h11"
+                                 data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Si, solo es posible colocarlas en nuestras habitaciones de dos camas, suites con
+                                    tina, suite con vista y nuestra master suite.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2"></div>
+            </div>
+        </div>
+        <!------------------------------------------->
+        <div id="fh5co-contact-section"
+             style=" display:flex; flex-direction: column-reverse; padding-top: 1.5rem!important; padding-bottom: 0.5rem!important;">
+            <div class="row">
+                <div class="col-md-6">
+                    <form class="contact_form" id="contactForm">
+                        <ul>
+                            <li>
+                                <h2 class="cursiveFont fontHover">Déjanos un mensaje:</h2>
+                                <!--<span class="required_notification">* Denotes Required Field</span>-->
+                            </li>
+                            <li>
+                                <label for="from_name" class="cursiveFont">Nombre:</label>
+                                <input type="text" name="name" class="borde_r" placeholder="Nombre" id="from_name"
+                                       required/>
+                                <!--<span class="fa valid-icon"></span>-->
+                            </li>
+                            <li>
+                                <label for="from_email" class="cursiveFont">Email:</label>
+                                <input type="email" name="email" placeholder="email@example.com" id="from_email"
+                                       required/>
+                                <!--<span class="fa valid-icon"></span>-->
+                                <span class="form_hint">Formato "email@domino.com"</span>
+                            </li>
+                            <li>
+                                <label for="from_message" class="cursiveFont">Mensaje:</label>
+                                <textarea name="message" cols="40" rows="6" required id="from_message"></textarea>
+                                <!--<span class="fa valid-icon"></span>-->
+                                <br>
+                                <span id="response-mail" class="fontHover cursiveFont"> </span>
+                            </li>
+                            <li>
+                                <input class="btn btn-primary btn-luxe-primary" type="button" value="Enviar"
+                                       onclick="enviarEmail()"
+                                       style="height: 40px; width: 90px; box-shadow: none; margin: auto;"/>
+                            </li>
+                        </ul>
+                    </form>
+
+                </div>
+                <div class="col-md-6">
+                    <!--<div id="map" class="fh5co-map"></div>-->
+                    <div id="map1" class="fh5co-map"
+                         style="height: 600px; display: flex; justify-content: center; align-items: center; padding:0 20px;">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.579176855236!2d-99.13985438406046!3d19.430580286885526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff515d840f61%3A0x80e2a464c3755aa!2sHotel%20Punto%20Mx!5e0!3m2!1ses!2smx!4v1653328105577!5m2!1ses!2smx"
+                                width="700" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <footer id="footer" class="fh5co-bg-color" style="text-align: center;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="copyright">
+                            <small class="cursiveFont fontHover">El punto más cómodo de México.</small>
+                            <p><small>&copy; Hotel Punto MX 2022<br> Todos los derechos reservados. </small> <br>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul class="link">
+                                    <li><a href="#" data-toggle="modal" data-target="#aboutUs">Acerca de Nosotros</a>
+                                    </li>
+                                    <li><a href="#" data-toggle="modal" data-target="#sucursalH">Sucursal</a></li>
+                                    <li><a href="#" data-toggle="modal" data-target="#bolsaTrabajo">Bolsa de Trabajo</a>
+                                    </li>
+                                    <li><a href="#" data-toggle="modal" data-target="#avisoPrivacidad">Aviso de
+                                        Privacidad</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h3>Comodidades</h3>
+                                <ul class="link">
+                                    <li><a href="restaurant.html">Resturant MX</a></li>
+                                    <li><a href="cafe.html">Café MX</a></li>
+                                    <li><a href="index.html#parking-tab">Estacionamiento</a></li>
+                                    <li><a href="index.html#pet-tab">Pet Friendly</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 m-0 row justify-content-center">
+                        <ul class="social-icons">
+                            <li>
+                                <a class="circle_element" href="https://twitter.com/hotel_puntomx?lang=es"
+                                   target="_blank"><i class="fa-brands fa-twitter" style="color: #000;"></i></a>
+                                <a class="circle_element" href="https://www.facebook.com/HotelPuntoMX/" target="_blank"><i
+                                        class="fa-brands fa-facebook" style="color: #000;"></i></a>
+                                <a class="circle_element" href="https://www.instagram.com/hotelpuntomx/"
+                                   target="_blank"><i class="fa-brands fa-instagram" style="color: #000;"></i></a>
+                                <!--<a href="https://www.tripadvisor.com.mx/Hotel_Review-g150800-d12696075-Reviews-Hotel_Punto_MX-Mexico_City_Central_Mexico_and_Gulf_Coast.html" target="_blank"><span class="footer_esp_ta">--</span></a>-->
+                                <a class="circle_element"
+                                   href="https://www.tripadvisor.com.mx/Hotel_Review-g150800-d12696075-Reviews-Hotel_Punto_MX-Mexico_City_Central_Mexico_and_Gulf_Coast.html"
+                                   target="_blank"><img src="./assets/logos/tripadvisor_l.png"></a>
+                            </li>
+                        </ul>
+                        <div id="TA_cdswritereviewlg536" class="TA_cdswritereviewlg"
+                             style="display: flex; justify-content: center;">
+                            <ul id="Ea8wnx2" class="TA_links JZShfshezv">
+                                <li id="XE5FiGTI" class="ozAAbpJR">
+                                    <a target="_blank"
+                                       href="https://www.tripadvisor.es/Hotel_Review-g150800-d12696075-Reviews-Hotel_Punto_MX-Mexico_City_Central_Mexico_and_Gulf_Coast.html">
+                                        <img src="https://static.tacdn.com/img2/brand_refresh/Tripadvisor_lockup_horizontal_secondary_registered.svg"
+                                             alt="TripAdvisor"/>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <script async
+                                src="https://www.jscache.com/wejs?wtype=cdswritereviewlg&amp;uniq=536&amp;locationId=12696075&amp;lang=es&amp;lang=es&amp;display_version=2"
+                                data-loadtrk onload="this.loadtrk=true"></script>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
 </div>
 <!-- Javascripts -->
 <script src="js/jquery-2.1.4.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
 <script src="js/hoverIntent.js"></script>
 <script src="js/superfish.js"></script>
 <script src="js/bootstrap.min.js"></script>
@@ -608,30 +777,30 @@
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
 </script>
 <script>
-  function enviarEmail(){
-  (function(){
-    emailjs.init("7y55EjOorzlD_0m9_");
-  })();
-  let name = document.getElementById("from_name").value;
-  let email = document.getElementById("from_email").value;
-  let msg = document.getElementById("from_message").value;
-  let templateParams = {
-    from_name: name,
-    from_email: email,
-    message: msg,
-    to_name: 'HotelPuntoMx'
-  };
-  emailjs.send('service_orh2159', 'template_e4xoh8b', templateParams)
-          .then(function(response) {
-            console.log('SUCCESS!', response.status, response.text);
-            document.getElementById("from_name").value = " ";
-            document.getElementById("from_email").value= " ";
-            document.getElementById("from_message").value= " ";
-            document.getElementById("response-mail").textContent = "¡Gracias! Pronto estaremos en contacto.";
-          }, function(error) {
-            console.log('FAILED...', error);
-          });
-  }
+    function enviarEmail() {
+        (function () {
+            emailjs.init("7y55EjOorzlD_0m9_");
+        })();
+        let name = document.getElementById("from_name").value;
+        let email = document.getElementById("from_email").value;
+        let msg = document.getElementById("from_message").value;
+        let templateParams = {
+            from_name: name,
+            from_email: email,
+            message: msg,
+            to_name: 'HotelPuntoMx'
+        };
+        emailjs.send('service_orh2159', 'template_e4xoh8b', templateParams)
+            .then(function (response) {
+                console.log('SUCCESS!', response.status, response.text);
+                document.getElementById("from_name").value = " ";
+                document.getElementById("from_email").value = " ";
+                document.getElementById("from_message").value = " ";
+                document.getElementById("response-mail").textContent = "¡Gracias! Pronto estaremos en contacto.";
+            }, function (error) {
+                console.log('FAILED...', error);
+            });
+    }
 </script>
 </body>
 </html>
