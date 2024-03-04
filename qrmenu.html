@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menus - Hoteles Punto MX</title>
+  <link rel="stylesheet" href="css/menus-css.css">
+</head>
+<body>
+<h1 class="yellowtail-regular">Hoteles Punto MX</h1>
+
+<div class="container">
+
+  <div class="tab-wrap">
+    <!-- active tab on page load gets checked attribute -->
+    <input type="radio" id="tab1" name="tabGroup1" class="tab" checked>
+    <label for="tab1">Restaurant</label>
+
+    <input type="radio" id="tab2" name="tabGroup1" class="tab">
+    <label for="tab2">Coctelería</label>
+
+    <input type="radio" id="tab3" name="tabGroup1" class="tab">
+    <label for="tab3">Room Service</label>
+    <!--
+    <input type="radio" id="tab4" name="tabGroup1" class="tab">
+    <label for="tab4">Prueba embed</label>
+    -->
+    <div class="tab__content">
+      <div id="viewer" style="width: 100%; height: 800px; margin: 0 auto; max-width: 100%;">
+        <iframe src="https://docs.google.com/viewer?srcid=1JsIb1HsH4snybU7Up225xD2UntvJ6gqa&pid=explorer&efh=false&a=v&chrome=false&embedded=true" width="100%" height="680px"></iframe>
+      </div>
+      <!--
+      <script type="text/javascript" src="https://cloudpdf.io/viewer.min.js"></script>
+      <script>
+        const config = {
+          documentId: '8adce019-9ac3-4b69-a4ea-6f2e2cc9989c',
+          darkMode: true,
+          token: '' //add your server side generated security token or change your document permission to public
+        };
+        CloudPDF(config, document.getElementById('viewer')).then((instance) => {
+
+        });
+      </script>
+      -->
+    </div>
+
+    <div class="tab__content">
+      <div id="viewer2" style="width: 100%; height: 800px;  margin: 0 auto; max-width: 100%;"></div>
+      <script type="text/javascript" src="https://cloudpdf.io/viewer.min.js"></script>
+      <script>
+        const config2 = {
+          documentId: 'd61c8340-037e-4552-83a0-25d1e23185fa',
+          darkMode: true,
+          token: ''
+        };
+        CloudPDF(config2, document.getElementById('viewer2')).then((instance) => {
+        });
+      </script>
+    </div>
+
+    <div class="tab__content">
+      <div id="viewer3" style="width: 100%; height: 800px;  margin: 0 auto; max-width: 100%;"></div>
+      <script type="text/javascript" src="https://cloudpdf.io/viewer.min.js"></script>
+      <script>
+        const config3 = {
+          documentId: '9f65f893-2255-4b63-9a4d-984347c4ebb5',
+          darkMode: true,
+          token:''
+        };
+        CloudPDF(config3, document.getElementById('viewer3')).then((instance) => {
+
+        });
+      </script>
+    </div>
+<!--
+    <div class="tab__content">
+      <div id="viewer4" style="width: 100%; height: 800px;  margin: 0 auto; max-width: 100%;">
+        <embed src="./files/menus2024/nuevo_menu2024-2.pdf#toolbar=0&navpanes=0&scrollbar=0" width="800" height="800" type='application/pdf' style="width: 100%;">
+      </div>
+    </div>
+-->
+  </div>
+
+
+</div>
+</body>
+</html>
