@@ -21,7 +21,10 @@
     <label for="tab2">Coctelería</label>
 
     <input type="radio" id="tab3" name="tabGroup1" class="tab">
-    <label for="tab3">Room Service</label>
+    <label for="tab3">Cafetería</label>
+
+    <input type="radio" id="tab4" name="tabGroup1" class="tab">
+    <label for="tab4">Room Service</label>
     <!--
     <input type="radio" id="tab4" name="tabGroup1" class="tab">
     <label for="tab4">Prueba embed</label>
@@ -30,19 +33,6 @@
       <div id="viewer" style="width: 100%; height: 800px; margin: 0 auto; max-width: 100%;">
         <iframe src="https://docs.google.com/viewer?srcid=1JsIb1HsH4snybU7Up225xD2UntvJ6gqa&pid=explorer&efh=false&a=v&chrome=false&embedded=true" width="100%" height="680px"></iframe>
       </div>
-      <!--
-      <script type="text/javascript" src="https://cloudpdf.io/viewer.min.js"></script>
-      <script>
-        const config = {
-          documentId: '8adce019-9ac3-4b69-a4ea-6f2e2cc9989c',
-          darkMode: true,
-          token: '' //add your server side generated security token or change your document permission to public
-        };
-        CloudPDF(config, document.getElementById('viewer')).then((instance) => {
-
-        });
-      </script>
-      -->
     </div>
 
     <div class="tab__content">
@@ -60,7 +50,13 @@
     </div>
 
     <div class="tab__content">
-      <div id="viewer3" style="width: 100%; height: 800px;  margin: 0 auto; max-width: 100%;"></div>
+      <div id="viewer3" style="width: 100%; height: 800px; margin: 0 auto; max-width: 100%;">
+        <iframe src="https://docs.google.com/viewer?srcid=1XgebuV13oJhRDYU3ZF935m-gzQ3pyWqJ&pid=explorer&efh=false&a=v&chrome=false&embedded=true" width="100%" height="680px"></iframe>
+      </div>
+    </div>
+
+    <div class="tab__content">
+      <div id="viewer4" style="width: 100%; height: 800px;  margin: 0 auto; max-width: 100%;"></div>
       <script type="text/javascript" src="https://cloudpdf.io/viewer.min.js"></script>
       <script>
         const config3 = {
@@ -68,7 +64,7 @@
           darkMode: true,
           token:''
         };
-        CloudPDF(config3, document.getElementById('viewer3')).then((instance) => {
+        CloudPDF(config3, document.getElementById('viewer4')).then((instance) => {
 
         });
       </script>
