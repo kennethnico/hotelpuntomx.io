@@ -56,7 +56,7 @@
     <script src="https://kit.fontawesome.com/f40904d23d.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="assets/logos/puntomx_ico.ico">
     <link rel="stylesheet" href="css/superfish.css">
-    <link rel="stylesheet" href="css/bootstrap-datepicker.min.css">
+    <!--<link rel="stylesheet" href="css/bootstrap-datepicker.min.css">-->
     <link rel="stylesheet" href="css/cs-select.css">
     <link rel="stylesheet" href="css/cs-skin-border.css">
     <link rel="stylesheet" href="css/themify-icons.css">
@@ -74,13 +74,16 @@
             height: 95vh !important;
         }
 
-        @media screen and (max-width: 990px) {
+        @media screen and (max-width: 991px) {
             .window_size {
                 height: 95vh !important;
             }
+            .mdp_img {
+            width: 60%!important;
+        }
         }
 
-        @media screen and (max-width: 758px) {
+        @media screen and (max-width: 768px) {
             .window_size {
                 height: 85vh !important;
             }
@@ -88,12 +91,22 @@
             .contact_form li {
                 padding-left: 20px !important;
             }
+            .mdp_img {
+            width: 55%!important;
+        }
+        .container{
+            max-width: 750px;
+        }
         }
 
         @media screen and (max-width: 580px) {
             .window_size {
-                height: 50vh !important;
+                height: 80vh !important;
             }
+
+            .mdp_img {
+            width: 65%!important;
+        }
         }
 
         input[type=number]::-webkit-inner-spin-button,
@@ -108,7 +121,8 @@
 
         .mdp_img {
             max-height: 50% !important;
-            width: 80%;
+            width: 50%;
+            margin-top: 30px;
         }
 
         .contact_form input {
@@ -419,33 +433,34 @@
                         -->
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img class="d-block mx-auto mdp_img" src="./images/tours/tour_uno.png"
+                                <img class="d-block mx-auto mdp_img" src="./images/tours/t-coyoacan.webp"
                                      alt="First slide">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block mx-auto mdp_img" src="./images/tours/tour_dos.png"
+                                <img class="d-block mx-auto mdp_img" src="./images/tours/t-grutas.webp"
                                      alt="Second slide">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block mx-auto mdp_img" src="./images/tours/tour_tres.png"
+                                <img class="d-block mx-auto mdp_img" src="./images/tours/t-luchalibre.webp"
                                      alt="Third slide">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block mx-auto mdp_img" src="./images/tours/tour_cuatro.png"
+                                <img class="d-block mx-auto mdp_img" src="./images/tours/t-piramides.webp"
                                      alt="Second slide">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block mx-auto mdp_img" src="./images/tours/tour_cinco.png"
+                                <img class="d-block mx-auto mdp_img" src="./images/tours/t-puebla.webp"
                                      alt="Third slide">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block mx-auto mdp_img" src="./images/tours/tour_seis.png"
+                                <img class="d-block mx-auto mdp_img" src="./images/tours/t-taxco.webp"
                                      alt="Second slide">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block mx-auto mdp_img" src="./images/tours/tour_siete.png"
+                                <img class="d-block mx-auto mdp_img" src="./images/tours/t-teotihuacan.webp"
                                      alt="Third slide">
                             </div>
+                            <!--
                             <div class="carousel-item">
                                 <img class="d-block mx-auto mdp_img" src="./images/tours/tour_ocho.png"
                                      alt="Third slide">
@@ -458,6 +473,7 @@
                                 <img class="d-block mx-auto mdp_img" src="./images/tours/tour_diez.png"
                                      alt="Third slide">
                             </div>
+                        -->
                         </div>
                         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
                            data-slide="prev">
@@ -546,13 +562,13 @@
                                 <select name="tour" class="borde_r" id="tour_tour" required>
                                     <option value="Piramides de Teotihuacán">Piramides de Teotihuacán</option>
                                     <option value="Teotihuacán aéreo">Teotihuacán aéreo</option>
-                                    <option value="Teotihuacán Express">Teotihuacán Express</option>
-                                    <option value="Xochimilco-Coyoacán">Xochimilco-Coyoacán</option>
-                                    <option value="Cholula-Puebla">Cholula-Puebla</option>
-                                    <option value="Taxco-Cuernavaca">Taxco-Cuernavaca</option>
-                                    <option value="Garibaldi Nocturno">Garibaldi Nocturno</option>
-                                    <option value="Tour Luchas">Tour Luchas</option>
-                                    <option value="Piramides y Safari">Piramides y Safari</option>
+                                    <!--<option value="Teotihuacán Express">Teotihuacán Express</option>-->
+                                    <option value="Xochimilco-Coyoacán">Coyoacán + Xochimilco</option>
+                                    <option value="Cholula-Puebla">Cholula, Puebla</option>
+                                    <option value="Taxco-Cuernavaca">Taxco + Cuernavaca</option>
+                                    <!--<option value="Garibaldi Nocturno">Garibaldi Nocturno</option>-->
+                                    <option value="Tour Luchas">Lucha libre</option>
+                                    <!--<option value="Piramides y Safari">Piramides y Safari</option>-->
                                     <option value="Grutas de Tolantongo">Grutas de Tolantongo</option>
                                 </select>
                             </li>
