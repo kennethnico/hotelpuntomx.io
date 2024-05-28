@@ -29,14 +29,17 @@
     <input type="radio" id="tab4" name="tabGroup1" class="tab">
     <label for="tab4">Prueba embed</label>
     -->
+    <!-- Restaurante-->
     <div class="tab__content">
       <div id="viewer" style="width: 100%; height: 800px; margin: 0 auto; max-width: 100%;">
+        <!--
         <iframe src="https://docs.google.com/viewer?srcid=1JsIb1HsH4snybU7Up225xD2UntvJ6gqa&pid=explorer&efh=false&a=v&chrome=false&embedded=true" width="100%" height="680px"></iframe>
+        -->
       </div>
     </div>
-
+    <!-- Coctelería-->
     <div class="tab__content">
-      <div id="viewer2" style="width: 100%; height: 800px;  margin: 0 auto; max-width: 100%;"></div>
+      <div id="viewer2" style="width: 100%; height: 800px; margin: 0 auto; max-width: 100%;"></div>
       <script type="text/javascript" src="https://cloudpdf.io/viewer.min.js"></script>
       <script>
         const config2 = {
@@ -48,15 +51,18 @@
         });
       </script>
     </div>
-
+<!--Cafetería-->
     <div class="tab__content">
       <div id="viewer3" style="width: 100%; height: 800px; margin: 0 auto; max-width: 100%;">
+        <!--
         <iframe src="https://docs.google.com/viewer?srcid=1XgebuV13oJhRDYU3ZF935m-gzQ3pyWqJ&pid=explorer&efh=false&a=v&chrome=false&embedded=true" width="100%" height="680px"></iframe>
+        -->
       </div>
     </div>
-
+<!--RoomService-->
     <div class="tab__content">
       <div id="viewer4" style="width: 100%; height: 800px;  margin: 0 auto; max-width: 100%;"></div>
+      <!--
       <script type="text/javascript" src="https://cloudpdf.io/viewer.min.js"></script>
       <script>
         const config3 = {
@@ -68,12 +74,20 @@
 
         });
       </script>
+      -->
     </div>
 <!--
     <div class="tab__content">
-      <div id="viewer4" style="width: 100%; height: 800px;  margin: 0 auto; max-width: 100%;">
-        <embed src="./files/menus2024/nuevo_menu2024-2.pdf#toolbar=0&navpanes=0&scrollbar=0" width="800" height="800" type='application/pdf' style="width: 100%;">
-      </div>
+      <script type="text/javascript" src="https://cloudpdf.io/viewer.min.js"></script>
+      <script>
+        const config2 = {
+          documentId: 'd61c8340-037e-4552-83a0-25d1e23185fa',
+          darkMode: true,
+          token: ''
+        };
+        CloudPDF(config2, document.getElementById('viewer2')).then((instance) => {
+        });
+      </script>
     </div>
 -->
   </div>
